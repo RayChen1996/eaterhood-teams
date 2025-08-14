@@ -1,0 +1,133 @@
+// Color
+
+$p500: #F4902B;
+$p400: #F6A341;
+$p300: #FAC677;
+$p200: #FCDEAC;
+$p100: #FEF5E2;
+$p50: #FAF6F0;
+
+$s500: #6D9651;
+$s400: #8DB375;
+$s300: #A5C68F;
+$s200: #D7E6CC;
+$s100: #EBF3E5;
+
+$t500: #6B4C3B;
+$t400: #866348;
+$t300: #9D7A55;
+$t200: #AC8C63;
+$t100: #BFA885;  
+
+$n500: #363533;
+$n400: #524F4C;
+$n300: #726E68;
+$n200: #B3AFAD;
+$n100: #E8E7E5;
+$n000: #FFFFFF;
+
+$su300: #64A939;
+$su200: #A4D77F;
+$su100: #E2F3D4;
+
+$d300: #F64C4C;
+$d200: #FFA2A2;
+$d100: #FFE1E1;
+
+$w300: #D58300;
+$w200: #FFC110;
+$w100: #FFEB88;
+
+$color-primary: (
+  p500:  $p500,
+  p400:  $p400,
+  p300:  $p300,
+  p200:  $p200,
+  p100:  $p100,
+  p50:   $p50,
+);
+
+$color-secondary: (
+  s500:  $s500,
+  s400:  $s400,
+  s300:  $s300,
+  s200:  $s200,
+  s100:  $s100,
+);
+
+$color-tertiary: (
+  t500:  $t500,
+  t400:  $t400,
+  t300:  $t300,
+  t200:  $t200,
+  t100:  $t100,
+);
+
+$color-neutral: (
+  n500:  $n500,
+  n400:  $n400,
+  n300:  $n300,
+  n200:  $n200,
+  n100:  $n100,
+  n000:  $n000,
+);
+
+$color-success: (
+  su300:  $su300,
+  su200:  $su200,
+  su100:  $su100,
+);
+
+$color-danger: (
+  d300:  $d300,
+  d200:  $d200,
+  d100:  $d100,
+);
+
+$color-warning: (
+  w300:  $w300,
+  w200:  $w200,
+  w100:  $w100,
+);
+
+$theme-colors:();
+$theme-colors: map-merge($theme-colors,$color-primary);
+$theme-colors: map-merge($theme-colors,$color-secondary);
+$theme-colors: map-merge($theme-colors,$color-tertiary);
+$theme-colors: map-merge($theme-colors,$color-neutral);
+$theme-colors: map-merge($theme-colors,$color-success);
+$theme-colors: map-merge($theme-colors,$color-danger);
+$theme-colors: map-merge($theme-colors,$color-warning);
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, //4px
+  2: $spacer * .5,  //8px
+  3: $spacer * .75, //12px
+  4: $spacer * 1,   //16px
+  5: $spacer * 1.5, //24px
+  6: $spacer * 2,   //32px
+  7: $spacer * 2.5, //40px
+  8: $spacer * 3,   //48px
+  9: $spacer * 4,   //64px
+);
+
+// Radius
+
+$border-radius:        .5rem;      //8px
+$border-radius-sm:     .25rem;     //4px
+$border-radius-lg:     1rem;       //16px
+$border-radius-pill:   62.4375rem; //999px
+
+// Heading
+
+$headings-margin-bottom:      0;
+$headings-font-weight:        600;
+$headings-line-height:        1.2;
+
+// Paragraph
+
+$paragraph-margin-bottom:   0;

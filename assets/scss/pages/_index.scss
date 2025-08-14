@@ -1,3 +1,15 @@
 .index-title {
   font-size: 100px;
 }
+
+// 測試用
+
+.boxes{
+    display: flex;
+    & > * {
+        width: 100px;
+        height: 100px;
+        border-radius: var(--bs-border-radius-pill);
+        background: $n300;
+    }
+}
