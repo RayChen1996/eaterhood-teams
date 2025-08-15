@@ -10,6 +10,27 @@
   align-items: center;
 }
 
+.Ewanbar{
+  padding: 11px 29px 5.92px;
+  position: relative;
+  &-img{
+    position: absolute;
+    top: 0;
+    left: 29px;
+  }
+  &-aside{
+    width: calc((100% / 317) * 296);
+    margin-left: calc((100% / 317) * 21);
+    text-align: center;
+    &-text{
+      background: #FCDEAC;
+      color: #6B4C3B;
+      border-radius: 24px;
+      padding: 8px 0;
+    }
+  }
+}
+
 .icon-primary{
   vertical-align: middle;
   width: 24px;

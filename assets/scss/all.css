@@ -15860,6 +15860,27 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.Ewanbar {
+  padding: 11px 29px 5.92px;
+  position: relative;
+}
+.Ewanbar-img {
+  position: absolute;
+  top: 0;
+  left: 29px;
+}
+.Ewanbar-aside {
+  width: 93.3753943218%;
+  margin-left: 6.6246056782%;
+  text-align: center;
+}
+.Ewanbar-aside-text {
+  background: #FCDEAC;
+  color: #6B4C3B;
+  border-radius: 24px;
+  padding: 8px 0;
+}
+
 .icon-primary {
   vertical-align: middle;
   width: 24px;
