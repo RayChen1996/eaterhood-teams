@@ -15848,7 +15848,19 @@ textarea.form-control-lg {
   font-size: 64px;
 }
 
-.face-small-icon {
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+
+.userbar {
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-primary {
   vertical-align: middle;
   width: 24px;
   height: 24px;
