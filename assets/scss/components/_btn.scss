@@ -1,0 +1,49 @@
+// 按鈕樣式
+
+.btn-primary {
+  // 圓角 24px
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+  // 按鈕 defalt 顏色
+    --bs-btn-color: #{$white};
+    --bs-btn-bg: #{$p400};
+    --bs-btn-border-color: #{$p400};
+  // 按鈕 hover 顏色
+    --bs-btn-hover-color: #{$white};
+    --bs-btn-hover-bg: #{$p500};
+    --bs-btn-hover-border-color: #{$p500};
+  // 按鈕 focus 陰影顏色
+    --bs-btn-focus-shadow-rgb: 217, 146, 63;
+  // 按鈕 active 顏色
+    --bs-btn-active-color: #{$white};
+    --bs-btn-active-bg: #{$p500};
+    --bs-btn-active-border-color: #{$p500};
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(54, 53, 51, 0.125);
+  // 按鈕 disabled 顏色
+    --bs-btn-disabled-color: #{$white};
+    --bs-btn-disabled-bg: #{$p300};
+    --bs-btn-disabled-border-color: #{$p300};
+}
+
+.btn-secondary {
+  // 圓角 24px
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+  // 按鈕 defalt 顏色
+    --bs-btn-color: #{$white};
+    --bs-btn-bg: #{$s400};
+    --bs-btn-border-color: #{$s400};
+  // 按鈕 hover 顏色
+    --bs-btn-hover-color: #{$white};
+    --bs-btn-hover-bg: #{$s500};
+    --bs-btn-hover-border-color: #{$s500};
+  // 按鈕 focus 陰影顏色
+    --bs-btn-focus-shadow-rgb: 217, 146, 63;
+  // 按鈕 active 顏色
+    --bs-btn-active-color: #{$white};
+    --bs-btn-active-bg: #{$s500};
+    --bs-btn-active-border-color: #{$s500};
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(54, 53, 51, 0.125);
+  // 按鈕 disabled 顏色
+    --bs-btn-disabled-color: #{$white};
+    --bs-btn-disabled-bg: #{$s300};
+    --bs-btn-disabled-border-color: #{$s300};
+}

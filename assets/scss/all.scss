@@ -11,6 +11,11 @@
 // 引入 bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// 前端組寫的元件
+@import './components/btn';
+
+// 前端組寫的迴圈
+@import './each/font-scale';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

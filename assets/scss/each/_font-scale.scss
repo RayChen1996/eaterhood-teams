@@ -1,0 +1,11 @@
+@each $title , $font-scale-data in $font-scale{
+  $font-size: nth($font-scale-data,1);
+  $line-height: nth($font-scale-data,2);
+  $font-weight: nth($font-scale-data,3);
+
+    .#{$title} {
+      font-size: #{$font-size}px !important;
+      line-height: #{$line-height} !important;
+      font-weight: #{$font-weight} !important;
+    }
+}

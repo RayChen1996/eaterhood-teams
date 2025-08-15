@@ -131,3 +131,21 @@ $headings-line-height:        1.2;
 // Paragraph
 
 $paragraph-margin-bottom:   0;
+
+// grid
+
+$grid-gutter-width:           2rem;
+
+// Font-scale
+
+$font-scale: (
+  h1: (35,1.2,600),
+  h2: (29,1.2,600),
+  h3: (24,1.2,600),
+  h4: (20,1.2,600),
+  t1b: (17,1.4,500),
+  t2b: (14,1.4,500),
+  t1: (17,1.4,400),
+  t2: (14,1.4,400),
+  t3: (12,1.4,400),
+);
