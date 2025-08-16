@@ -20,11 +20,11 @@
   &-img{
     position: absolute;
     top: 0;
-    left: 29px;
+    left: calc((100% / 375) * 29);
   }
   &-aside{
     width: calc((100% / 317) * 296);
-    margin-left: calc((100% / 317) * 21);
+    margin-left: auto;
     text-align: center;
     &-text{
       background: #FCDEAC;
