@@ -2,22 +2,25 @@
   background: #69f0ae;
   font-size: 64px;
 }
-
+.bg-footer {
+  background: #866348;
+  border-radius: 20px 20px 0 0;
+  a {
+    color: #fff;
+  }
+}
 /* 底部導航列樣式 */
 footer .nav-link {
-  color: #6c757d; /* Bootstrap 的 text-muted 顏色 */
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 /* hover 效果 */
 footer .nav-link:hover {
-  color: #0d6efd; /* Bootstrap primary */
   transform: scale(1.1); /* 微縮放 */
 }
 
 /* active 狀態 */
 footer .nav-link.active {
-  color: #0d6efd; /* 高亮顏色 */
   font-weight: 600; /* 文字稍微加粗 */
 }
 
