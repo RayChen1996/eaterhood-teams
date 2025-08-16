@@ -4,6 +4,10 @@
   gap: 16px 0;
 }
 
+.aspect-NearbyEaters{
+  aspect-ratio: 154/142;
+}
+
 .userbar{
   padding: 4px 8px;
   display: flex;
@@ -40,6 +44,20 @@
 .card-icon-text{
   display: inline-flex;
   gap: 4px;
+  .gap-0{
+    gap: 0;
+  }
+}
+
+.card-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  &-item {
+    flex: 0 0 156px;
+    scroll-snap-align: start;
+  }
 }
 
 .card-tag{
@@ -51,6 +69,12 @@
   &-top{
     right: 8px;
     top: 8px;
+  }
+  &-primary{
+    color: #FFFFFF;
+    background: #866348;
+    padding: 4px 8px;
+    border-radius: 24px;
   }
   &-secondary{
     color: #363533;

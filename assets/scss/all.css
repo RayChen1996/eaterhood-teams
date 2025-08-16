@@ -126,8 +126,8 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg: #FEF5E2;
+  --bs-body-bg-rgb: 254, 245, 226;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -2717,10 +2717,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #FEF5E2, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #FEF5E2, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -15854,6 +15854,10 @@ textarea.form-control-lg {
   gap: 16px 0;
 }
 
+.aspect-NearbyEaters {
+  aspect-ratio: 154/142;
+}
+
 .userbar {
   padding: 4px 8px;
   display: flex;
@@ -15891,6 +15895,20 @@ textarea.form-control-lg {
   display: inline-flex;
   gap: 4px;
 }
+.card-icon-text .gap-0 {
+  gap: 0;
+}
+
+.card-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+}
+.card-scroll-item {
+  flex: 0 0 156px;
+  scroll-snap-align: start;
+}
 
 .card-tag {
   position: absolute;
@@ -15902,6 +15920,12 @@ textarea.form-control-lg {
 .card-tag-top {
   right: 8px;
   top: 8px;
+}
+.card-tag-primary {
+  color: #FFFFFF;
+  background: #866348;
+  padding: 4px 8px;
+  border-radius: 24px;
 }
 .card-tag-secondary {
   color: #363533;
