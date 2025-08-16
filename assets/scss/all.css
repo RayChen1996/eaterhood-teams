@@ -15871,10 +15871,10 @@ textarea.form-control-lg {
 .Ewanbar-img {
   position: absolute;
   top: 0;
-  left: 7.7333333333%;
+  left: 29px;
 }
 .Ewanbar-aside {
-  width: 93.3753943218%;
+  width: calc(100% - 21px);
   margin-left: auto;
   text-align: center;
 }

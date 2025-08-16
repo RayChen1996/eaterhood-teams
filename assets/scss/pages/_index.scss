@@ -20,10 +20,10 @@
   &-img{
     position: absolute;
     top: 0;
-    left: calc((100% / 375) * 29);
+    left: 29px;
   }
   &-aside{
-    width: calc((100% / 317) * 296);
+    width: calc(100% - 21px);
     margin-left: auto;
     text-align: center;
     &-text{
