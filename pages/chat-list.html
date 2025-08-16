@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>好友聊天列表</title>
+  </head>
+  <body>
+    <!-- <%- include('./layout/header'); -%> -->
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-around mb-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">好友</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">聚會</a>
+      </li>
+    </ul>
+
+    <!-- 吃貨專區 -->
+    <div class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h6 class="fw-bold mb-0">吃貨專區</h6>
+        <a href="#" class="text-decoration-none small">查看所有</a>
+      </div>
+      <div class="d-flex gap-3 overflow-auto">
+        <div class="text-center">
+          <img
+            src="../assets/images/chat/大頭貼-01.svg"
+            class="rounded-circle"
+          />
+          <div class="small">Ken</div>
+        </div>
+        <div class="text-center">
+          <img
+            src="../assets/images/chat/大頭貼-02.svg"
+            class="rounded-circle"
+          />
+          <div class="small">Kevin</div>
+        </div>
+        <div class="text-center">
+          <img
+            src="../assets/images/chat/大頭貼-03.svg"
+            class="rounded-circle"
+          />
+          <div class="small">James</div>
+        </div>
+        <div class="text-center">
+          <img
+            src="../assets/images/chat/大頭貼-04.svg"
+            class="rounded-circle"
+          />
+          <div class="small">Serry</div>
+        </div>
+        <div class="text-center">
+          <img
+            src="../assets/images/chat/大頭貼-05.svg"
+            class="rounded-circle"
+          />
+          <div class="small">Amy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 最近對話 -->
+    <div class="container">
+      <h6 class="fw-bold mb-3">最近對話</h6>
+      <ul class="list-group">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="d-flex">
+            <img
+              src="../assets/images/chat/大頭貼-05.svg"
+              class="rounded-circle me-3"
+            />
+            <div>
+              <div class="fw-bold">Ken</div>
+              <small>你好！附近有新開的拉麵店...</small>
+            </div>
+          </div>
+          <div class="text-end">
+            <small class="text-muted">3天前</small><br />
+            <span class="badge bg-warning text-dark">輸給了</span>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="d-flex">
+            <img
+              src="../assets/images/chat/大頭貼-05.svg"
+              class="rounded-circle me-3"
+            />
+            <div>
+              <div class="fw-bold">Kevin</div>
+              <small>中山有家咖啡推薦嗎～</small>
+            </div>
+          </div>
+          <div class="text-end">
+            <small class="text-muted">3天前</small><br />
+            <span class="badge bg-warning text-dark">輸給了</span>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="d-flex">
+            <img
+              src="../assets/images/chat/大頭貼-05.svg"
+              class="rounded-circle me-3"
+            />
+            <div>
+              <div class="fw-bold">James</div>
+              <small>改天一起吃拉麵嗎？</small>
+            </div>
+          </div>
+          <div class="text-end">
+            <small class="text-muted">4天前</small><br />
+            <span class="badge bg-warning text-dark">輸給了</span>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="d-flex">
+            <img
+              src="../assets/images/chat/大頭貼-05.svg"
+              class="rounded-circle me-3"
+            />
+            <div>
+              <div class="fw-bold">Sarah</div>
+              <small>明天一起吃心心雞嗎</small>
+            </div>
+          </div>
+          <div class="text-end">
+            <small class="text-muted">5天前</small><br />
+            <span class="badge bg-warning text-dark">輸給了</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
