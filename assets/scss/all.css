@@ -5360,23 +5360,23 @@ textarea.form-control-lg {
 }
 
 .card {
-  --bs-card-spacer-y: 1rem;
-  --bs-card-spacer-x: 1rem;
-  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-spacer-y: 8px;
+  --bs-card-spacer-x: 8px;
+  --bs-card-title-spacer-y: 0.25rem;
   --bs-card-title-color: ;
   --bs-card-subtitle-color: ;
-  --bs-card-border-width: var(--bs-border-width);
-  --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: #E8E7E5;
+  --bs-card-border-radius: 1rem;
   --bs-card-box-shadow: ;
-  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-  --bs-card-cap-padding-y: 0.5rem;
-  --bs-card-cap-padding-x: 1rem;
+  --bs-card-inner-border-radius: calc(1rem - 1px);
+  --bs-card-cap-padding-y: 4px;
+  --bs-card-cap-padding-x: 8px;
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;
-  --bs-card-color: ;
-  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-color: #726E68;
+  --bs-card-bg: #FFFFFF;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 1rem;
   position: relative;
@@ -15885,4 +15885,27 @@ textarea.form-control-lg {
   vertical-align: middle;
   width: 24px;
   height: 24px;
+}
+
+.card-icon-text {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.card-tag {
+  position: absolute;
+}
+.card-tag-bottom {
+  left: 8px;
+  bottom: 8px;
+}
+.card-tag-top {
+  right: 8px;
+  top: 8px;
+}
+.card-tag-secondary {
+  color: #363533;
+  background: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 24px;
 }/*# sourceMappingURL=all.css.map */

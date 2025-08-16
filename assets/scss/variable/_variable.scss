@@ -149,3 +149,25 @@ $font-scale: (
   t2: (14,1.4,400),
   t3: (12,1.4,400),
 );
+
+// Cards
+
+$card-spacer-y:                     8px;
+$card-spacer-x:                     8px;
+$card-title-spacer-y:               $spacer * .25;
+// $card-title-color:                  null !default;
+// $card-subtitle-color:               null !default;
+$card-border-width:                 1px;
+$card-border-color:                 $n100;
+$card-border-radius:                $border-radius-lg;
+// $card-box-shadow:                   null !default;
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+// $card-cap-padding-y:                $card-spacer-y * .5 !default;
+// $card-cap-padding-x:                $card-spacer-x !default;
+// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+// $card-cap-color:                    null !default;
+// $card-height:                       null !default;
+$card-color:                        $n300;
+$card-bg:                           $n000;
+// $card-img-overlay-padding:          $spacer !default;
+// $card-group-margin:                 $grid-gutter-width * .5 !default;
