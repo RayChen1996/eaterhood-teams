@@ -16,7 +16,13 @@
 
 // 前端組寫的迴圈
 @import './each/font-scale';
+@import './each/box-size';
 
+// icon css 位置
+@import './icon/icon';
+
+
+@import './base/base';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
