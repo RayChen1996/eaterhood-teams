@@ -1,0 +1,20 @@
+.aspect-find-friend{
+    aspect-ratio: 163/142;
+}
+
+.mb-find-friend{
+    margin-bottom: 70px;
+}
+
+.button-Iwan{
+    background: #6D9651;
+    color: #FFFFFF;
+    border-radius: 16px 16px 4px 16px;
+    padding: 5.5px 12px;
+    &-index{
+        position: fixed;
+        z-index: 1;
+        right: 5px;
+        bottom: 102px;
+    }
+}

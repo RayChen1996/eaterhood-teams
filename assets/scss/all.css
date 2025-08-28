@@ -15955,8 +15955,51 @@ textarea.form-control-lg {
   mask-size: 100% 100%;
 }
 
+.material-symbols--page-info-outline-rounded {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M17.75 20.25q-1.575 0-2.662-1.088T14 16.5t1.088-2.662t2.662-1.088t2.663 1.088T21.5 16.5t-1.088 2.663t-2.662 1.087m0-2q.725 0 1.238-.513T19.5 16.5t-.513-1.237t-1.237-.513t-1.237.513T16 16.5t.513 1.238t1.237.512M11 17.5H5q-.425 0-.712-.288T4 16.5t.288-.712T5 15.5h6q.425 0 .713.288T12 16.5t-.288.713T11 17.5m-4.75-6.25q-1.575 0-2.662-1.088T2.5 7.5t1.088-2.662T6.25 3.75t2.663 1.088T10 7.5t-1.088 2.663T6.25 11.25m0-2q.725 0 1.238-.513T8 7.5t-.513-1.237T6.25 5.75t-1.237.513T4.5 7.5t.513 1.238t1.237.512M19 8.5h-6q-.425 0-.712-.288T12 7.5t.288-.712T13 6.5h6q.425 0 .713.288T20 7.5t-.288.713T19 8.5m-12.75-1'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.material-symbols--keyboard-arrow-left {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.material-symbols--keyboard-arrow-right {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .header {
@@ -16160,4 +16203,25 @@ footer .bi {
 
 .mb-footer {
   margin-bottom: 97.08px;
+}
+
+.aspect-find-friend {
+  aspect-ratio: 163/142;
+}
+
+.mb-find-friend {
+  margin-bottom: 70px;
+}
+
+.button-Iwan {
+  background: #6D9651;
+  color: #FFFFFF;
+  border-radius: 16px 16px 4px 16px;
+  padding: 5.5px 12px;
+}
+.button-Iwan-index {
+  position: fixed;
+  z-index: 1;
+  right: 5px;
+  bottom: 102px;
 }/*# sourceMappingURL=all.css.map */
