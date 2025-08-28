@@ -1,0 +1,41 @@
+.position-top-right-4 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.position-top-right-2 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.position-bottom-left-2 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+.bannerDot {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    .active-dot{
+        width: 7px;
+        height: 7px;
+        border-radius: 7px;
+        background-color: #F4902B;
+        margin-bottom: 8px;
+    }
+    .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 7px;
+        background-color: #B3AFAD;
+        margin-bottom: 8px;
+        }
+}
+.badge-category{
+    position: absolute;
+    border-radius: 4px 4px 4px 0;
+    top:-9px;
+    right:-6px;
+}
