@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抽飯友</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="main">
+      <div class="text-center">
+        <div class="mb-4">
+          <img src="/assets/images/magic_Iwan.svg" alt="魔法Iwan">
+        </div>
+        <div class="mb-5">
+          <h1 class="t1b text-t500 mb-2">讓I丸幫你抽一位飯友吧！</h1>
+          <p class="t2 text-n300">每日24小時內隨機抽一位</p>
+        </div>
+        <div>
+        <a href="/eaterhood-teams/pages/today-friend.html" class="btn btn-primary btn-draw">抽飯友</a>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
