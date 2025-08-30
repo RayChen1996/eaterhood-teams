@@ -1,0 +1,18 @@
+.add-event{
+    position: fixed;
+    right: 16px;
+    bottom: 102px;
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6A341;
+    z-index: 1;
+
+
+    // 暫時性樣式
+    font-size: 30px;
+}

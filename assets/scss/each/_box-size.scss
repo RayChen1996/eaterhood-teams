@@ -1,0 +1,6 @@
+@each $size in $box-size{
+    .box-#{$size}px{
+        width: #{$size}px !important;
+        height: #{$size}px !important;
+    }
+}
