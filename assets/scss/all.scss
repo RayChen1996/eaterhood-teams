@@ -16,11 +16,26 @@
 
 // 前端組寫的迴圈
 @import './each/font-scale';
+@import './each/box-size';
 
+// icon css 位置
+@import './icon/icon';
+
+
+@import './base/base';
 @import './layout/header.scss';
 @import './layout/footer.scss';
+@import './layout/footer-new.scss';
 
 @import './pages/index.scss';
+
 @import './pages/draw-friend.scss';
 @import './pages/today-friend';
+<<<<<<< HEAD
 @import './pages/match-sucess';
+=======
+
+@import './pages/events';
+@import './pages/find-friend';
+
+>>>>>>> 9d1aae8f265fb3f70e12eef05197802758d49478
