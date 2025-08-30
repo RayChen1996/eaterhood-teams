@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入 Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>抽飯友</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main class="main">
-      <div class="text-center">
+
+    <main>
+
+      <!-- 導覽列 -->
+        <Section class="container">
+          <div class="d-flex justify-content-between py-2">
+            <a href="find-friend.html"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
+            <p class="t1b text-n500 py-2"></p>
+            <a href="#"></a>
+            </div>
+        </section>
+
+      <div class="py-draw text-center">
         <div class="mb-4">
           <img src="/assets/images/magic_Iwan.svg" alt="魔法Iwan">
         </div>
@@ -18,7 +31,7 @@
           <p class="t2 text-n300">每日24小時內隨機抽一位</p>
         </div>
         <div>
-        <a href="/eaterhood-teams/pages/today-friend.html" class="btn btn-primary btn-draw">抽飯友</a>
+        <a href="today-friend.html" class="btn btn-primary btn-draw">抽飯友</a>
         </div>
       </div>
     </main>
