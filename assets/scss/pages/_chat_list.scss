@@ -1,0 +1,60 @@
+.nav-underline .nav-link {
+  padding: 12px 0px;
+  color: black;
+  position: relative;
+  border: none;
+  width: 100%;
+}
+
+.nav-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.pills-tab .nav-link.active::after {
+  width: 100%;
+  background-color: #f4902b;
+  width: 32px;
+}
+
+.top-tab {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fef5e2;
+}
+.top-tab .nav-link.active::after {
+  width: 100%;
+  background-color: #f4902b;
+}
+
+.friends {
+  flex-grow: 1;
+  text-align: center;
+}
+.meeting {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.top-tab {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+.pb-88 {
+  padding-bottom: 88px;
+}

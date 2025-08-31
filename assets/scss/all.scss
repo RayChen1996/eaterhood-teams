@@ -12,21 +12,22 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // 前端組寫的元件
-@import './components/btn';
+@import "./components/btn";
 
 // 前端組寫的迴圈
-@import './each/font-scale';
-@import './each/box-size';
+@import "./each/font-scale";
+@import "./each/box-size";
 
 // icon css 位置
-@import './icon/icon';
+@import "./icon/icon";
 
+@import "./base/base";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/footer-new.scss";
 
-@import './base/base';
-@import './layout/header.scss';
-@import './layout/footer.scss';
-@import './layout/footer-new.scss';
-
+@import "./pages/index.scss";
+ 
 @import './pages/index.scss';
 
 @import './pages/draw-friend';
@@ -38,3 +39,9 @@
 
 
 @import './pages/match-sucess';
+ 
+  
+
+@import "./pages/events"; 
+@import "./pages/chat_list";
+ 
