@@ -27,10 +27,21 @@
 @import "./layout/footer-new.scss";
 
 @import "./pages/index.scss";
+ 
+@import './pages/index.scss';
 
-@import "./pages/draw-friend.scss";
-@import "./pages/today-friend";
+@import './pages/draw-friend';
+@import './pages/today-friend';
 
-@import "./pages/events";
-@import "./pages/find-friend";
+
+@import './pages/events';
+@import './pages/find-friend';
+
+
+@import './pages/match-sucess';
+ 
+  
+
+@import "./pages/events"; 
 @import "./pages/chat_list";
+ 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 引入 Material Symbols Outlined -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
     <title>今日抽到飯友</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
         <!-- 導覽列 -->
         <Section>
           <div class="d-flex justify-content-between py-2">
-            <a href="#"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
+            <a href="draw-friend.html"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
             <p class="t1b text-n500 py-2">今日抽到飯友！</p>
             <a href="#"></a>
             </div>
@@ -56,10 +57,11 @@
           </div>
         </section>
         <section>
-          <div class="bg-white border-radius-lg px-4 py-2 rounded-2 mb-4">
+          <div class="bg-white border-radius-lg px-4 py-2 rounded-2 mb-4 position-relative">
             <p class="t2 text-n200">正在找人
               <span class="text-t500">喝咖啡</span>
             </p>
+            <div class="triangle"></div>
           </div>
         </section>
         <!-- 飲食偏好 -->
@@ -77,6 +79,11 @@
             <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">什麼都想試</span>
           </div>
         </section>
+        <!-- 配對按鈕 -->
+          <div class="fixed-right">
+            <a href="match-sucess.html"><span class="material-icons-outlined match text-d300 mb-3">favorite</span></a>
+            <a href="#"><span class="material-symbols-outlined match text-t500">close</span></a>
+          </div>
         <!-- 個人自介 -->
         <section class="mb-4">
           <h2 class="t1b text-n500 mb-2">個人自介</h2>
@@ -306,6 +313,7 @@
             <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
           </div>
         </section>
+        <div class="mb-footer"></div>
       </div>
         
     </main>
