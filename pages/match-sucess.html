@@ -4,17 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入 Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>配對成功</title>
   </head>
+  
+  <body>
+    <div class="phone">
+      <div class="screen">
+        <%- include('./layout/header-p300'); -%>
+        <main class="match-main">
+          <!-- 導覽列 -->
+        <Section class="container">
+          <div class="d-flex justify-content-between py-2">
+            <a href="today-friend.html"><span class="material-symbols-outlined">close</span></a>
+            <p class="t1b text-n500 py-2"></p>
+            <a href="#"></a>
+            </div>
+        </section>
+        <section class="text-center mb-4">
+          <h1 class="h1 text-white mb-1">配對成功！</h1>
+          <h2 class="t1b text-t500">快來跟對方聊聊吧~</h2>
+        </section>
+          <section class="mb-4">
+          <div class="d-flex justify-content-center pt-4 mb-4">
+            <div class="position-relative">
+              <div class="position-top-right-4">
+                <span class="badge rounded-pill text-bg-t400 t3">咖啡成癮</span>
+              </div>
+              <img src="../assets/images/match/match-friend.svg" alt="today-firend" class="d-block rounded-3">
+              <img src="../assets/images/match/wave-lightcolor.svg" alt="overlay" class="rounded-3 position-absolute bottom-0">
+              
+              <div class="position-absolute bottom-0 ps-4 mb-3">
+                <h1 class="h4 text-t500 mb-1">Ken 28</h1>
+                <div class="d-flex mb-3 align-items-center">
+                  <span class="material-symbols-outlined me-1">location_on</span>
+                  <p class="t2 me-1">台北市信義區
+                    <span class="me-1">距離0.8km</span>
+                  </p>                  
+                </div>
+                <p class="t3 mb-1 text-n300">你們的共同標籤</p>            
+                <div class="d-flex flex-wrap">
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">人生不能沒有手搖</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">我真的愛吃</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">辣食控</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">日式料理超讚</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">給我蛋白質</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">咖啡店探險家</span>
+                  </div>
+              </div>
 
-  <body class="match-main">
-    <main class="match-sucess">
-      <div class="container d-flex justify-content-center flex-column">
-        <h1 class="h1 text-white">配對成功！</h1>
-    <h2 class="t1b text-t500">快來跟對方聊聊吧~</h2>
+              <!-- 輪播按鈕 -->
+              <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <div class="bannerDot w-100 mx-auto">
+                  <a href="#" class="active-dot"></a>
+                  <a href="#" class="dot"></a>
+                  <a href="#" class="dot"></a>
+                  <a href="#" class="dot"></a>
+                  <a href="#" class="dot"></a>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </section>
+        <div class="container pb-6">
+          <input class="form-control rounded-pill bg-white" type="text" placeholder="傳送訊息...." aria-label="default input example">
+        </div>
+        </main>
       </div>
-    </main>
-
+    </div>
 
     <script type="module" src="../main.js"></script>
   </body>

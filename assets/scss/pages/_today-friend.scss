@@ -60,9 +60,9 @@
 
 /* 配對按鈕 */
 .fixed-right {
-    position: fixed ;
+    position: absolute ;
     top: 450px;
-    right: 0 ;
+    right: 16px ;
     z-index: 2;
 
     .match {

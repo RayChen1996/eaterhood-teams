@@ -10,316 +10,320 @@
     <title>今日抽到飯友</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <div class="phone">
+      <div class="screen">
+        <%- include('./layout/header'); -%>
 
-    <main>
-      <div class="container mb-9">
-        <!-- 導覽列 -->
-        <Section>
-          <div class="d-flex justify-content-between py-2">
-            <a href="draw-friend.html"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
-            <p class="t1b text-n500 py-2">今日抽到飯友！</p>
-            <a href="#"></a>
-            </div>
-        </section>
-        <!-- 飯友資料 -->
-        <section>
-          <div class="d-flex justify-content-center pt-4 mb-4">
-            <div class="position-relative">
-              <div class="position-top-right-4">
-                <span class="badge rounded-pill text-bg-t400 t3">咖啡成癮</span>
-              </div>
-              <img src="../assets/images/today-firend/friend-picture.svg" alt="today-firend" class="d-block rounded-3">
-              <img src="../assets/images/today-firend/wave-deepcolor.svg" alt="overlay" class="rounded-3 position-absolute bottom-0">
-              
-              <div class="position-absolute bottom-0 ps-4 mb-3">
-                <h1 class="h4 text-t500 mb-1">Ken 28</h1>
-                <div class="d-flex mb-3 align-items-center">
-                  <span class="material-symbols-outlined me-1">location_on</span>
-                  <p class="t2 me-1">台北市信義區
-                    <span class="me-1">距離0.8km</span>
-                  </p>                                
-                </div>            
-              </div>
+        <main>
+          <div class="container mb-9">
+            <!-- 導覽列 -->
+            <Section>
+              <div class="d-flex justify-content-between py-2">
+                <a href="draw-friend.html"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
+                <p class="t1b text-n500 py-2">今日抽到飯友！</p>
+                <a href="#"></a>
+                </div>
+            </section>
+            <!-- 飯友資料 -->
+            <section>
+              <div class="d-flex justify-content-center pt-4 mb-4">
+                <div class="position-relative">
+                  <div class="position-top-right-4">
+                    <span class="badge rounded-pill text-bg-t400 t3">咖啡成癮</span>
+                  </div>
+                  <img src="../assets/images/today-firend/friend-picture.svg" alt="today-firend" class="d-block rounded-3">
+                  <img src="../assets/images/today-firend/wave-deepcolor.svg" alt="overlay" class="rounded-3 position-absolute bottom-0">
+                  
+                  <div class="position-absolute bottom-0 ps-4 mb-3">
+                    <h1 class="h4 text-t500 mb-1">Ken 28</h1>
+                    <div class="d-flex mb-3 align-items-center">
+                      <span class="material-symbols-outlined me-1">location_on</span>
+                      <p class="t2 me-1">台北市信義區
+                        <span class="me-1">距離0.8km</span>
+                      </p>                                
+                    </div>            
+                  </div>
 
-              <!-- 輪播按鈕 -->
-              <div class="position-absolute bottom-0 start-50 translate-middle-x">
-                <div class="bannerDot w-100 mx-auto">
-                  <a href="#" class="active-dot"></a>
-                  <a href="#" class="dot"></a>
-                  <a href="#" class="dot"></a>
-                  <a href="#" class="dot"></a>
-                  <a href="#" class="dot"></a>
+                  <!-- 輪播按鈕 -->
+                  <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                    <div class="bannerDot w-100 mx-auto">
+                      <a href="#" class="active-dot"></a>
+                      <a href="#" class="dot"></a>
+                      <a href="#" class="dot"></a>
+                      <a href="#" class="dot"></a>
+                      <a href="#" class="dot"></a>
+                    </div>
+                  </div>
+                    
                 </div>
               </div>
-                
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="bg-white border-radius-lg px-4 py-2 rounded-2 mb-4 position-relative">
-            <p class="t2 text-n200">正在找人
-              <span class="text-t500">喝咖啡</span>
-            </p>
-            <div class="triangle"></div>
-          </div>
-        </section>
-        <!-- 飲食偏好 -->
-        <section class="mb-4">
-          <h2 class="t1b text-n500 mb-2">飲食偏好</h2>
-          <div class="d-flex flex-wrap">
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">人生不能沒有手搖</span>
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">我真的愛吃</span>
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">辣食控</span>
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">日式料理超讚</span>
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">給我蛋白質</span>
-            <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">咖啡店探險家</span>
-            <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">香菜是惡魔</span>
-            <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">紅蘿菠BYE</span>
-            <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">什麼都想試</span>
-          </div>
-        </section>
-        <!-- 配對按鈕 -->
-          <div class="fixed-right">
-            <a href="match-sucess.html"><span class="material-icons-outlined match text-d300 mb-3">favorite</span></a>
-            <a href="#"><span class="material-symbols-outlined match text-t500">close</span></a>
-          </div>
-        <!-- 個人自介 -->
-        <section class="mb-4">
-          <h2 class="t1b text-n500 mb-2">個人自介</h2>
-          <p class="t2 text-n400">嗨～我是Ken，我熱愛探索各種美食，特別喜歡吃火鍋，最近迷上了手做甜點，也很想嘗試各種異國料理</p>
-        </section>
-        <!-- 最近報名的聚會 -->
-        <section class="mb-4">
-          <h2 class="t1b text-n500 mb-2">最近報名的聚會</h2>
-          <!-- 聚會card -->
-          <div class="row g-3 d-flex overflow-x-auto flex-nowrap">
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card1 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-02.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+            </section>
+            <section>
+              <div class="bg-white border-radius-lg px-4 py-2 rounded-2 mb-4 position-relative">
+                <p class="t2 text-n200">正在找人
+                  <span class="text-t500">喝咖啡</span>
+                </p>
+                <div class="triangle"></div>
+              </div>
+            </section>
+            <!-- 飲食偏好 -->
+            <section class="mb-4">
+              <h2 class="t1b text-n500 mb-2">飲食偏好</h2>
+              <div class="d-flex flex-wrap">
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">人生不能沒有手搖</span>
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">我真的愛吃</span>
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">辣食控</span>
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">日式料理超讚</span>
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">給我蛋白質</span>
+                <span class="badge rounded-pill text-bg-p500 t3 text-white me-2 mb-2">咖啡店探險家</span>
+                <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">香菜是惡魔</span>
+                <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">紅蘿菠BYE</span>
+                <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">什麼都想試</span>
+              </div>
+            </section>
+            <!-- 配對按鈕 -->
+              <div class="fixed-right">
+                <a href="match-sucess.html"><span class="material-icons-outlined match text-d300 mb-3">favorite</span></a>
+                <a href="#"><span class="material-symbols-outlined match text-t500">close</span></a>
+              </div>
+            <!-- 個人自介 -->
+            <section class="mb-4">
+              <h2 class="t1b text-n500 mb-2">個人自介</h2>
+              <p class="t2 text-n400">嗨～我是Ken，我熱愛探索各種美食，特別喜歡吃火鍋，最近迷上了手做甜點，也很想嘗試各種異國料理</p>
+            </section>
+            <!-- 最近報名的聚會 -->
+            <section class="mb-4">
+              <h2 class="t1b text-n500 mb-2">最近報名的聚會</h2>
+              <!-- 聚會card -->
+              <div class="row g-3 d-flex overflow-x-auto flex-nowrap">
+                <div class="col-6">
+                  <!-- 聚會card1 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-02.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">義式料理小聚</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">7/27</span>
+                          <span class="material-symbols-outlined t3">schedule</span>19:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市大安區
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">義式料理小聚</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">7/27</span>
-                      <span class="material-symbols-outlined t3">schedule</span>19:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市大安區
-                    </p>
+                <div class="col-6">
+                  <!-- 聚會card2 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-04.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">來一口微醺 再認識你</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">7/28</span>
+                          <span class="material-symbols-outlined t3">schedule</span>19:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市大安區
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <!-- 聚會card3 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-05.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">烤肉配朋友最對味</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">7/23</span>
+                          <span class="material-symbols-outlined t3">schedule</span>19:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市大安區
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <!-- 聚會card4 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-01.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">晨型人健康早餐</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">7/20</span>
+                          <span class="material-symbols-outlined t3">schedule</span>9:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市大安區
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <!-- 聚會card5 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-03.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">海邊小酌</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">8/30</span>
+                          <span class="material-symbols-outlined t3">schedule</span>19:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市中山區
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <!-- 聚會card6 -->
+                  <div class="card me-3" style="width: 10rem;">
+                    <div class="position-relative">
+                      <img src="../assets/images/today-firend/meetup-06.svg" class="card-img-top" alt="meet-up">
+                      <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
+                      <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="t3 card-title mb-1 text-n500">熱門網紅店踩點</h3>
+                      <div class="card-text t3 text-n300">
+                        <p class="d-flex align-items-center mb-1">
+                          <span class="material-symbols-outlined t3">calendar_today</span>
+                          <span class="me-2">7/26</span>
+                          <span class="material-symbols-outlined t3">schedule</span>19:00
+                        </p>
+                        <p class="d-flex align-items-center">
+                          <span class="material-symbols-outlined t3">location_on</span>台北市大安區
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card2 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-04.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
-                </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">來一口微醺 再認識你</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">7/28</span>
-                      <span class="material-symbols-outlined t3">schedule</span>19:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市大安區
-                    </p>
+            </section>
+            <!-- 吃貨筆記 -->
+            <section class="mb-4">
+              <h2 class="t1b text-n500 mb-2">吃貨筆記</h2>
+              <!-- 筆記 -->
+              <div class="card mb-4 position-relative">
+                <div class="row g-3 p-2 ">
+                  <div class="col-3">
+                    <img src="../assets/images/today-firend/eatnote-01.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
                   </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
+                      <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
+                    </div>
+                  </div>              
                 </div>
+                <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
               </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card3 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-05.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
-                </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">烤肉配朋友最對味</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">7/23</span>
-                      <span class="material-symbols-outlined t3">schedule</span>19:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市大安區
-                    </p>
+              <!-- 筆記 -->
+              <div class="card mb-4 position-relative">
+                <div class="row g-3 p-2 ">
+                  <div class="col-3">
+                    <img src="../assets/images/today-firend/eatnote-02.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
                   </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
+                      <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
+                    </div>
+                  </div>              
                 </div>
+                <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
               </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card4 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-01.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
-                </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">晨型人健康早餐</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">7/20</span>
-                      <span class="material-symbols-outlined t3">schedule</span>9:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市大安區
-                    </p>
+              <!-- 筆記 -->
+              <div class="card mb-4 position-relative">
+                <div class="row g-3 p-2 ">
+                  <div class="col-3">
+                    <img src="../assets/images/today-firend/eatnote-03.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
                   </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
+                      <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
+                    </div>
+                  </div>              
                 </div>
+                <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
               </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card5 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-03.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
-                </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">海邊小酌</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">8/30</span>
-                      <span class="material-symbols-outlined t3">schedule</span>19:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市中山區
-                    </p>
+              <!-- 筆記 -->
+              <div class="card mb-4 position-relative">
+                <div class="row g-3 p-2 ">
+                  <div class="col-3">
+                    <img src="../assets/images/today-firend/eatnote-04.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
                   </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
+                      <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
+                    </div>
+                  </div>              
                 </div>
+                <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
               </div>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2">
-              <!-- 聚會card6 -->
-              <div class="card me-3" style="width: 10rem;">
-                <div class="position-relative">
-                  <img src="../assets/images/today-firend/meetup-06.svg" class="card-img-top" alt="meet-up">
-                  <a href="#"><span class="material-symbols-outlined text-white position-top-right-2">bookmark</span></a>
-                  <span class="badge rounded-pill bg-white t3 text-n500 position-bottom-left-2">4/6人</span>
-                </div>
-                <div class="card-body">
-                  <h3 class="t3 card-title mb-1 text-n500">熱門網紅店踩點</h3>
-                  <div class="card-text t3 text-n300">
-                    <p class="d-flex align-items-center mb-1">
-                      <span class="material-symbols-outlined t3">calendar_today</span>
-                      <span class="me-2">7/26</span>
-                      <span class="material-symbols-outlined t3">schedule</span>19:00
-                    </p>
-                    <p class="d-flex align-items-center">
-                      <span class="material-symbols-outlined t3">location_on</span>台北市大安區
-                    </p>
+              <!-- 筆記 -->
+              <div class="card mb-4 position-relative">
+                <div class="row g-3 p-2 ">
+                  <div class="col-3">
+                    <img src="../assets/images/today-firend/eatnote-05.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
                   </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
+                      <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
+                    </div>
+                  </div>              
                 </div>
+                <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
               </div>
-            </div>
+            </section>
+            <div class="mb-footer"></div>
           </div>
-        </section>
-        <!-- 吃貨筆記 -->
-        <section class="mb-4">
-          <h2 class="t1b text-n500 mb-2">吃貨筆記</h2>
-          <!-- 筆記 -->
-          <div class="card mb-4 position-relative">
-            <div class="row g-3 p-2 ">
-              <div class="col-3">
-                <img src="../assets/images/today-firend/eatnote-01.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
-                  <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
-                </div>
-              </div>              
-            </div>
-            <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
-          </div>
-          <!-- 筆記 -->
-          <div class="card mb-4 position-relative">
-            <div class="row g-3 p-2 ">
-              <div class="col-3">
-                <img src="../assets/images/today-firend/eatnote-02.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
-                  <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
-                </div>
-              </div>              
-            </div>
-            <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
-          </div>
-          <!-- 筆記 -->
-          <div class="card mb-4 position-relative">
-            <div class="row g-3 p-2 ">
-              <div class="col-3">
-                <img src="../assets/images/today-firend/eatnote-03.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
-                  <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
-                </div>
-              </div>              
-            </div>
-            <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
-          </div>
-          <!-- 筆記 -->
-          <div class="card mb-4 position-relative">
-            <div class="row g-3 p-2 ">
-              <div class="col-3">
-                <img src="../assets/images/today-firend/eatnote-04.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
-                  <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
-                </div>
-              </div>              
-            </div>
-            <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
-          </div>
-          <!-- 筆記 -->
-          <div class="card mb-4 position-relative">
-            <div class="row g-3 p-2 ">
-              <div class="col-3">
-                <img src="../assets/images/today-firend/eatnote-05.svg" class="img-fluid rounded-start" alt="eat-note" style="width: 74px; height: 74px;">
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title t3 text-t500">夜市神級香氣組合！根本嘴饞天花板</h5>
-                  <p class="card-text t3 text-n500">最近真的迷上這種 邊走邊吃系小吃，這攤的章魚燒跟鐵板串燒直接逼瘋味蕾！...</p>
-                </div>
-              </div>              
-            </div>
-            <span class="badge bg-s500 text-white px-4 badge-category">巷弄美食</span>
-          </div>
-        </section>
-        <div class="mb-footer"></div>
+            
+        </main>
+        <%- include('./layout/footer-phone'); -%>
       </div>
-        
-    </main>
-
-    <%- include('./layout/footer'); -%>
-
+    </div>
+    
+    
     <script type="module" src="../main.js"></script>
   </body>
 </html>
