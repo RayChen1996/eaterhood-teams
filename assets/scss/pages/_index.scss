@@ -54,6 +54,12 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 12px;
+  scrollbar-width: none; /* Firefox 隱藏捲軸 */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome、Safari、Edge 隱藏捲軸 */
+  }
+  
   &-item {
     flex: 0 0 156px;
     scroll-snap-align: start;
