@@ -3,12 +3,12 @@
   }
 
   .phone {
-    width:  calc(375px + (16px*2));
+    max-width: calc(375px + (16px*2));
     border: 16px solid black; /* 外框厚度 */
     border-radius: 40px;      /* 手機圓角 */
     background: #000;
     position: relative;
-    margin: 10px auto;
+    margin: 16px auto;
   }
 
   .screen {

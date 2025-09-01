@@ -59,7 +59,7 @@
   &::-webkit-scrollbar {
     display: none; /* Chrome、Safari、Edge 隱藏捲軸 */
   }
-  
+
   &-item {
     flex: 0 0 156px;
     scroll-snap-align: start;
@@ -105,6 +105,6 @@
   }
 }
 
-.mb-footer{
-  margin-bottom: 97.08px;
+.main-mb{
+  margin-bottom: 102px;
 }
