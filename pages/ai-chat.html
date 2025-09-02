@@ -20,7 +20,7 @@
             <div class="text-center chat-mb-lg">
                 <div class="t3 text-n300">3天前</div>
             </div>
-            <div class="d-flex flex-column">
+            <div id="textBar" class="d-flex flex-column">
                 <p class="chat chat-primary chat-mb-sm">你好，很高興認識你～</p>
                 <p class="chat chat-primary chat-mb-sm">我剛下班，你下班了嗎?</p>
                 <p class="chat chat-secondary chat-mb-lg">我也剛下班！</p>
@@ -38,7 +38,20 @@
   </div>
 
 
-
+<script>
+    let aiInput = document.getElementById("aiInput");
+    let textBar = document.getElementById("textBar");
+    addEventListener("keydown",(e)=>{
+        if(e.key === "Enter"){
+            let p = document.createElement("p");
+            p.classList.add("chat");
+            p.classList.add("chat-primary");
+            p.classList.add("chat-mb-sm");
+            p.textContent = aiInput.value;
+            textBar.appendChild(p);
+        }
+    })
+</script>
 
     <script type="module" src="../main.js"></script>
   </body>
