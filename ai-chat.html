@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-  <script type="module" crossorigin src="/eaterhood-teams/assets/main-CuhyWHrr.js"></script>
-  <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-OOueNGzn.css">
+  <script type="module" crossorigin src="/eaterhood-teams/assets/main-Cx_319bc.js"></script>
+  <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-BaiZNXfQ.css">
 </head>
 <body>
 
@@ -71,6 +71,10 @@
         overlay.classList.add("active");
     })
 
+    overlay.addEventListener("click",()=>{
+        overlay.classList.remove("active");
+    })
+
     // 創建標籤和樣式並把文字送到畫面
     let showText = () =>{
         let p = document.createElement("p");
@@ -90,8 +94,6 @@
         }
         if(e.key === "ArrowLeft"){
             Ewan.classList.add("active");
-            overlay.classList.remove("active");
-
         }
         if(e.key === "ArrowRight"){
             Ewan.classList.remove("active");
