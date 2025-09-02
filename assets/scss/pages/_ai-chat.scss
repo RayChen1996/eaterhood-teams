@@ -1,0 +1,23 @@
+.chat{
+    padding: 5.5px 12px;
+    overflow-wrap: break-word; /* 新標準，推薦使用 */
+    &-mb-sm{
+        margin-bottom: 8px;
+    }
+    &-mb-lg{
+        margin-bottom: 20px;
+    }
+    &-primary{
+        max-width: 262px;  /* 設定元素的最大寬度 */
+        background: #FAC677;
+        border-radius: 16px 16px 4px 16px;
+        margin-left: auto;
+    }
+    &-secondary{
+        max-width: 228px;  /* 設定元素的最大寬度 */
+
+        background: #E8E7E5;
+        border-radius: 16px 16px 16px 4px;
+        margin-right: auto;
+    }
+}

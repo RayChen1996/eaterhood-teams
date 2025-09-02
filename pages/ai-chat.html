@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+</head>
+<body>
+
+  <div class="phone">
+    <div class="screen">
+  
+      <%- include('./layout/header'); -%>
+  
+  
+      <main class="main main-mb">
+        <div class="container-fluid">
+            <!-- 置中文字 -->
+            <div class="text-center chat-mb-lg">
+                <div class="t3 text-n300">3天前</div>
+            </div>
+            <div class="d-flex flex-column">
+                <p class="chat chat-primary chat-mb-sm">你好，很高興認識你～</p>
+                <p class="chat chat-primary chat-mb-sm">我剛下班，你下班了嗎?</p>
+                <p class="chat chat-secondary chat-mb-lg">我也剛下班！</p>
+                <p class="chat chat-primary chat-mb-lg">剛好我們都在附近，要不要一起吃晚餐～</p>
+                <p class="chat chat-secondary chat-mb-lg">好呀！附近有間新開的拉麵店看起來很好吃耶<br>你會有興趣嗎</p>
+            </div>
+        </div>
+      
+      </main>
+  
+      <%- include('./layout/footer-ai-chat'); -%>
+  
+  
+    </div>
+  </div>
+
+
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
