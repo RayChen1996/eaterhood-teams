@@ -59,6 +59,10 @@
         overlay.classList.add("active");
     })
 
+    overlay.addEventListener("click",()=>{
+        overlay.classList.remove("active");
+    })
+
     // 創建標籤和樣式並把文字送到畫面
     let showText = () =>{
         let p = document.createElement("p");
@@ -78,8 +82,6 @@
         }
         if(e.key === "ArrowLeft"){
             Ewan.classList.add("active");
-            overlay.classList.remove("active");
-
         }
         if(e.key === "ArrowRight"){
             Ewan.classList.remove("active");
