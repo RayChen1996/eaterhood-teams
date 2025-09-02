@@ -12,6 +12,17 @@
     <div class="screen">
   
       <%- include('./layout/header'); -%>
+
+    <div class="button-Ewan-index">
+        <a class="d-flex align-items-start">
+            <span class="button-Ewan mt-2 border-1">
+                <span class="mt-2">我可以幫你想話題喔！</span>
+            </span>
+            <img src="../assets/images/ai button_Ewan.svg" alt="ai button_Ewan">
+        </a>
+    </div>
+
+    <div class="overlay"></div>
   
   
       <main class="main main-mb">
@@ -41,16 +52,40 @@
 <script>
     let aiInput = document.getElementById("aiInput");
     let textBar = document.getElementById("textBar");
+    let Ewan = document.querySelector(".button-Ewan-index");
+    let overlay = document.querySelector(".overlay");
+
+    Ewan.addEventListener("click",()=>{
+        overlay.classList.add("active");
+    })
+
+    // 創建標籤和樣式並把文字送到畫面
+    let showText = () =>{
+        let p = document.createElement("p");
+        p.classList.add("chat");
+        p.classList.add("chat-primary");
+        p.classList.add("chat-mb-sm");
+        p.textContent = aiInput.value;
+        textBar.appendChild(p);
+        aiInput.value = "";
+    }
+
+    // 按"Enter"事件監聽
     addEventListener("keydown",(e)=>{
+        console.log(e.key)
         if(e.key === "Enter"){
-            let p = document.createElement("p");
-            p.classList.add("chat");
-            p.classList.add("chat-primary");
-            p.classList.add("chat-mb-sm");
-            p.textContent = aiInput.value;
-            textBar.appendChild(p);
+            showText();
+        }
+        if(e.key === "ArrowLeft"){
+            Ewan.classList.add("active");
+            overlay.classList.remove("active");
+
+        }
+        if(e.key === "ArrowRight"){
+            Ewan.classList.remove("active");
         }
     })
+
 </script>
 
     <script type="module" src="../main.js"></script>
