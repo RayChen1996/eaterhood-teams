@@ -22,6 +22,8 @@
         </a>
     </div>
 
+
+
     <div class="overlay">
         <!-- 第一頁 -->
         <section class="text-box page-1 active">
@@ -29,7 +31,7 @@
 
                 <div class="d-flex justify-content-between align-items-center py-2">
                     <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
-                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><span class="material-symbols--check-rounded"></span></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(2)"><span class="material-symbols--check-rounded"></span></a>
                 </div>
 
                 <p class="t1b">發現你們48小時沒有聊天了，需要我提供什麼樣類型的話題建議呢？</p>
@@ -55,7 +57,7 @@
 
                 <div class="d-flex justify-content-between align-items-center py-2">
                     <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
-                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(3)"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
                 </div>
                 
                 <div>
@@ -71,11 +73,44 @@
             </div>
         </section>
 
+        <!-- 第三頁 -->
+
+        <section class="text-box page-3">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(2)"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
+                </div>
+                
+                <div>
+                    <div onclick="copyText('你吃披薩喜歡放鳳梨還是覺得是邪門歪道？')" class="chat-tertiary chat mb-4">你吃披薩喜歡放鳳梨還是覺得是邪門歪道？</div>
+                    <div onclick="copyText('披薩你是拿手吃派還是一定要用刀叉派？')" class="chat-tertiary chat mb-4">披薩你是拿手吃派還是一定要用刀叉派？</div>
+                    <div onclick="copyText('吃披薩會先吃料還是先啃餅皮？')" class="chat-tertiary chat">吃披薩會先吃料還是先啃餅皮？</div>
+
+                </div>
+                <img class="position-absolute end-0 bottom-0" src="../assets/images/嘟嘴_Ewan.svg" alt="嘟嘴_Ewan.svg">
+
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
     </div>
   
   
       <main class="main main-mb">
         <div class="container-fluid">
+
+            <section class="d-flex align-items-center py-2">
+                <a class="ai-topbar-item" href="index.html"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                <a class="ai-topbar-item me-3" href="#"><img src="../assets/images/聊天頭貼.svg" alt="聊天頭貼.svg"></a>
+                <span class="t1b me-auto">Ken</span>
+                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/video.svg" alt="video.svg"></a>
+                <a class="ai-topbar-item" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+            </section>
+
             <!-- 置中文字 -->
             <div class="text-center chat-mb-lg">
                 <div class="t3 text-n300">3天前</div>
