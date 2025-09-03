@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+</head>
+<body>
+
+  <div class="phone">
+    <div class="screen">
+  
+      <%- include('./layout/header'); -%>
+
+    <div class="button-Ewan-index">
+        <a class="d-flex align-items-start">
+            <span class="button-Ewan mt-2 border-1">
+                <span class="mt-2">我可以幫你想話題喔！</span>
+            </span>
+            <img src="../assets/images/ai button_Ewan.svg" alt="ai button_Ewan">
+        </a>
+    </div>
+
+
+
+    <div class="overlay">
+        <!-- 第一頁 -->
+        <section class="text-box page-1 active">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(2)"><span class="material-symbols--check-rounded"></span></a>
+                </div>
+
+                <p class="t1b">發現你們48小時沒有聊天了，需要我提供什麼樣類型的話題建議呢？</p>
+
+                <div class="d-flex gap-3">
+                    <div onclick="goToPage(2)" class="text-box-btn w-50">搞笑趣味</div>
+                    <div class="text-box-btn w-50">溫馨共鳴</div>
+                </div>
+                <div class="d-flex gap-3">
+                    <div class="text-box-btn w-50">飲食偏好</div>
+                    <div class="text-box-btn w-50">探索冒險</div>
+                </div>
+            </div>
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
+        <!-- 第二頁 -->
+
+        <section class="text-box page-2">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(3)"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
+                </div>
+                
+                <div>
+                    <div onclick="copyText('你支持「鳳梨應該放在披薩上」嗎？')" class="chat-tertiary chat mb-4">你支持「鳳梨應該放在披薩上」嗎？</div>
+                    <div onclick="copyText('你吃披薩會把邊吃掉嗎？')" class="chat-tertiary chat mb-4">你吃披薩會把邊吃掉嗎？</div>
+                    <div onclick="copyText('咖哩飯你是拌開派還是不拌派？')" class="chat-tertiary chat">咖哩飯你是拌開派還是不拌派？</div>
+
+                </div>
+                <img class="position-absolute end-0 bottom-0" src="../assets/images/嘟嘴_Ewan.svg" alt="嘟嘴_Ewan.svg">
+
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
+        <!-- 第三頁 -->
+
+        <section class="text-box page-3">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="goToPage(2)"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
+                </div>
+                
+                <div>
+                    <div onclick="copyText('你吃披薩喜歡放鳳梨還是覺得是邪門歪道？')" class="chat-tertiary chat mb-4">你吃披薩喜歡放鳳梨還是覺得是邪門歪道？</div>
+                    <div onclick="copyText('披薩你是拿手吃派還是一定要用刀叉派？')" class="chat-tertiary chat mb-4">披薩你是拿手吃派還是一定要用刀叉派？</div>
+                    <div onclick="copyText('吃披薩會先吃料還是先啃餅皮？')" class="chat-tertiary chat">吃披薩會先吃料還是先啃餅皮？</div>
+
+                </div>
+                <img class="position-absolute end-0 bottom-0" src="../assets/images/嘟嘴_Ewan.svg" alt="嘟嘴_Ewan.svg">
+
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
+    </div>
+  
+  
+      <main class="main main-mb">
+        <div class="container-fluid">
+
+            <section class="d-flex align-items-center py-2">
+                <a class="ai-topbar-item" href="index.html"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                <a class="ai-topbar-item me-3" href="#"><img src="../assets/images/聊天頭貼.svg" alt="聊天頭貼.svg"></a>
+                <span class="t1b me-auto">Ken</span>
+                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/video.svg" alt="video.svg"></a>
+                <a class="ai-topbar-item" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+            </section>
+
+            <!-- 置中文字 -->
+            <div class="text-center chat-mb-lg">
+                <div class="t3 text-n300">3天前</div>
+            </div>
+            <div id="textBar" class="d-flex flex-column">
+                <p class="chat chat-primary chat-mb-sm">你好，很高興認識你～</p>
+                <p class="chat chat-primary chat-mb-sm">我剛下班，你下班了嗎?</p>
+                <div class="feedback-group chat-mb-lg d-flex align-items-center gap-1">
+                    <p class="chat chat-secondary">我也剛下班！</p>
+                    <img class="feedback-active" src="../assets/images/icon/feedback_active.svg" alt="feedback_active.svg">
+                    <img class="feedback-default" src="../assets/images/icon/feedback_default.svg" alt="feedback_default.svg" style="display: none;">
+                </div>
+                <p class="chat chat-primary chat-mb-lg">剛好我們都在附近，要不要一起吃晚餐～</p>
+                <div class="feedback-group chat-mb-lg d-flex align-items-center gap-1">
+                    <p class="chat chat-secondary">好呀！附近有間新開的拉麵店看起來很好吃耶<br>你會有興趣嗎</p>
+                    <img class="feedback-active" src="../assets/images/icon/feedback_active.svg" alt="feedback_active.svg" style="display: none;">
+                    <img class="feedback-default" src="../assets/images/icon/feedback_default.svg" alt="feedback_default.svg">
+                </div>
+            </div>
+        </div>
+      
+      </main>
+  
+      <%- include('./layout/footer-ai-chat'); -%>
+  
+  
+    </div>
+  </div>
+
+
+<script>
+    let aiInput = document.getElementById("aiInput");
+    let textBar = document.getElementById("textBar");
+    let Ewan = document.querySelector(".button-Ewan-index");
+    let overlay = document.querySelector(".overlay");
+    let textBoxs = document.querySelectorAll(".text-box");
+
+
+    // 愛心按鈕切換
+    let feedbackGroup = document.querySelectorAll(".feedback-group");
+    feedbackGroup.forEach((group)=>{
+        let feedbackActive = group.querySelector(".feedback-active");
+        let feedbackDefault = group.querySelector(".feedback-default");
+        let feedbackToggle=()=>{
+            if(feedbackActive.style.display === "none"){
+                feedbackActive.style.display = "inline";
+                feedbackDefault.style.display = "none";
+            }else{
+                feedbackActive.style.display = "none";
+                feedbackDefault.style.display = "inline";  
+            }
+        }
+        feedbackActive.addEventListener("click",feedbackToggle);
+        feedbackDefault.addEventListener("click",feedbackToggle);
+    })
+
+    // 換頁
+
+    let goToPage = (pageNumber) =>{
+        textBoxs.forEach(box=>{
+            box.classList.remove("active");
+        });
+        document.querySelector(".page-" + pageNumber).classList.add("active");
+    }
+
+    // 按按鈕貼上文字
+    let copyText = (text) =>{
+        overlayDisabled();
+        EwanDisabled();
+        aiInput.value = text;
+    }
+
+
+    // 透明黑框的開啟與關閉
+    let overlayActive = () =>{
+        overlay.classList.add("active");
+    }
+
+    let overlayDisabled = () =>{
+        overlay.classList.remove("active");
+        goToPage(1);
+    }
+
+    // 小精靈的開啟與關閉
+    let EwanActive = () =>{
+        Ewan.classList.add("active");
+    }
+
+    let EwanDisabled = () =>{
+        Ewan.classList.remove("active");
+    }
+
+    // 創建標籤和樣式並把文字送到畫面
+    let showText = () =>{
+        let p = document.createElement("p");
+        p.classList.add("chat");
+        p.classList.add("chat-primary");
+        p.classList.add("chat-mb-sm");
+        p.textContent = aiInput.value;
+        textBar.appendChild(p);
+        aiInput.value = "";
+    }
+
+    // 按小精靈開啟，按黑框關閉
+
+    Ewan.addEventListener("click",overlayActive);
+    overlay.addEventListener("click",overlayDisabled);
+    textBoxs.forEach((textBox)=>{
+            textBox.addEventListener("click",(e)=>{
+            e.stopPropagation();// 阻止事件冒泡
+        })
+
+    })
+        
+        
+
+
+    // 按"Enter"事件監聽
+    addEventListener("keydown",(e)=>{
+        console.log(e.key)
+        if(!overlay.classList.contains("active")){
+            if(e.key === "Enter"){
+                showText();
+            }
+            if(e.key === "ArrowLeft"){
+                EwanActive();
+            }
+            if(e.key === "ArrowRight"){
+                EwanDisabled();
+            }
+        }
+    })
+
+</script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
