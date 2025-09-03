@@ -2,3 +2,16 @@
   background: #69F0AE;
   font-size: 64px;
 }
+
+.header-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 44px 44px 0 0;
+  background: #FEF5E2;
+  &-mt{
+    margin-top: 108px;
+  }
+}

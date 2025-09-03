@@ -11,19 +11,22 @@
   <div class="phone">
     <div class="screen">
   
-      <%- include('./layout/header'); -%>
-  
-  
-      <main class="main main-mb">
       
+      
+      <main class="main main-mb header-bar-mt">
+        
         <!-- 使用者相關資訊 -->
-      
-        <section class="userbar">
-          <img class="p-1 me-3" src="../assets/images/index/userbar-person.svg" alt="小雨頭貼">
-          <h1 class="t1b text-n500 me-auto">Hi,小雨</h1>
-          <div class="d-flex align-items-center">
-            <a href="#" class="me-1 d-flex align-items-center warning-dotted-parent"><span class="material-symbols--notifications-outline-rounded"></span><span class="warning-dotted-child"></span></a>
-            <a href="#">◉</a>
+        
+        <section class="header-bar">
+          <%- include('./layout/header'); -%>
+          <div class="userbar">
+            <img class="p-1 me-3" src="../assets/images/index/userbar-person.svg" alt="小雨頭貼">
+            <h1 class="t1b text-n500 me-auto">Hi,小雨</h1>
+            <div class="d-flex align-items-center">
+              <a href="#" class="me-1 d-flex align-items-center warning-dotted-parent"><span class="material-symbols--notifications-outline-rounded"></span><span class="warning-dotted-child"></span></a>
+              <a href="#">◉</a>
+            </div>
+
           </div>
         </section>
         

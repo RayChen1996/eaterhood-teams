@@ -11,7 +11,6 @@
   <div class="phone">
     <div class="screen">
   
-      <%- include('./layout/header'); -%>
 
     <div class="button-Ewan-index">
         <a class="d-flex align-items-start">
@@ -99,17 +98,23 @@
     </div>
   
   
-      <main class="main main-mb">
+      <main class="main main-mb header-bar-mt">
         <div class="container-fluid">
 
-            <section class="d-flex align-items-center py-2">
-                <a class="ai-topbar-item" href="index.html"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
-                <a class="ai-topbar-item me-3" href="#"><img src="../assets/images/聊天頭貼.svg" alt="聊天頭貼.svg"></a>
-                <span class="t1b me-auto">Ken</span>
-                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
-                <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/video.svg" alt="video.svg"></a>
-                <a class="ai-topbar-item" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
-            </section>
+
+            <div class="header-bar">
+                <%- include('./layout/header'); -%>
+    
+                <section class="d-flex align-items-center py-2 mx-2">
+                    <a class="ai-topbar-item" href="index.html"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="ai-topbar-item me-3" href="#"><img src="../assets/images/聊天頭貼.svg" alt="聊天頭貼.svg"></a>
+                    <span class="t1b me-auto">Ken</span>
+                    <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+                    <a class="ai-topbar-item me-1" href="#"><img src="../assets/images/icon/video.svg" alt="video.svg"></a>
+                    <a class="ai-topbar-item" href="#"><img src="../assets/images/icon/call.svg" alt="call.svg"></a>
+                </section>
+
+            </div>
 
             <!-- 置中文字 -->
             <div class="text-center chat-mb-lg">
