@@ -24,7 +24,7 @@
             <h1 class="t1b text-n500 me-auto">Hi,小雨</h1>
             <div class="d-flex align-items-center">
               <a href="#" class="me-1 d-flex align-items-center warning-dotted-parent"><span class="material-symbols--notifications-outline-rounded"></span><span class="warning-dotted-child"></span></a>
-              <a href="#">◉</a>
+              <a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a>
             </div>
 
           </div>
@@ -243,7 +243,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-01.svg" class="card-img-top" alt="NearbyEvents-01">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">晨型人健康早餐</h3>
@@ -269,7 +269,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-02.svg" class="card-img-top" alt="NearbyEvents-02">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img  class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">義式料理小聚</h3>
@@ -295,7 +295,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-03.svg" class="card-img-top" alt="NearbyEvents-03">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">海邊小酌</h3>
@@ -321,7 +321,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-04.svg" class="card-img-top" alt="NearbyEvents-04">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">來一口微醺 再認識你</h3>
@@ -347,7 +347,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-05.svg" class="card-img-top" alt="NearbyEvents-05">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">烤肉配朋友最對味</h3>
@@ -373,7 +373,7 @@
                 <div class="position-relative">
                   <img src="../assets/images/index/NearbyEvents-06.svg" class="card-img-top" alt="NearbyEvents-06">
                   <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#">◉</a></div>
+                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
                 </div>
                 <div class="card-body">
                   <h3 class="card-title t3 text-n500">熱門網紅店踩點</h3>
@@ -405,7 +405,20 @@
   </div>
 
 
+<script>
+  // 抓出所有 .bookmark-btn
+  const bookmarks = document.querySelectorAll(".bookmark-btn");
 
+  bookmarks.forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (btn.src.includes("bookmark_default.svg")) {
+        btn.src = "../assets/images/icon/bookmark_active.svg";
+      } else {
+        btn.src = "../assets/images/icon/bookmark_default.svg";
+      }
+    });
+  });
+</script>
 
     <script type="module" src="../main.js"></script>
   </body>
