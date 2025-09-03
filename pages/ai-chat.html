@@ -34,9 +34,17 @@
             <div id="textBar" class="d-flex flex-column">
                 <p class="chat chat-primary chat-mb-sm">你好，很高興認識你～</p>
                 <p class="chat chat-primary chat-mb-sm">我剛下班，你下班了嗎?</p>
-                <p class="chat chat-secondary chat-mb-lg">我也剛下班！</p>
+                <div class="feedback-group chat-mb-lg d-flex align-items-center gap-1">
+                    <p class="chat chat-secondary">我也剛下班！</p>
+                    <img class="feedback-active" src="../assets/images/icon/feedback_active.svg" alt="feedback_active.svg">
+                    <img class="feedback-default" src="../assets/images/icon/feedback_default.svg" alt="feedback_default.svg" style="display: none;">
+                </div>
                 <p class="chat chat-primary chat-mb-lg">剛好我們都在附近，要不要一起吃晚餐～</p>
-                <p class="chat chat-secondary chat-mb-lg">好呀！附近有間新開的拉麵店看起來很好吃耶<br>你會有興趣嗎</p>
+                <div class="feedback-group chat-mb-lg d-flex align-items-center gap-1">
+                    <p class="chat chat-secondary">好呀！附近有間新開的拉麵店看起來很好吃耶<br>你會有興趣嗎</p>
+                    <img class="feedback-active" src="../assets/images/icon/feedback_active.svg" alt="feedback_active.svg" style="display: none;">
+                    <img class="feedback-default" src="../assets/images/icon/feedback_default.svg" alt="feedback_default.svg">
+                </div>
             </div>
         </div>
       
@@ -55,6 +63,24 @@
     let Ewan = document.querySelector(".button-Ewan-index");
     let overlay = document.querySelector(".overlay");
 
+    // 愛心按鈕切換
+    let feedbackGroup = document.querySelectorAll(".feedback-group");
+    feedbackGroup.forEach((group)=>{
+        let feedbackActive = group.querySelector(".feedback-active");
+        let feedbackDefault = group.querySelector(".feedback-default");
+        let feedbackToggle=()=>{
+            if(feedbackActive.style.display === "none"){
+                feedbackActive.style.display = "inline";
+                feedbackDefault.style.display = "none";
+            }else{
+                feedbackActive.style.display = "none";
+                feedbackDefault.style.display = "inline";  
+            }
+        }
+        feedbackActive.addEventListener("click",feedbackToggle);
+        feedbackDefault.addEventListener("click",feedbackToggle);
+    })
+    
     // 透明黑框的開啟與關閉
     let overlayActive = () =>{
         overlay.classList.add("active");
