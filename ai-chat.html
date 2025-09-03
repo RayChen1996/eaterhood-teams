@@ -105,11 +105,10 @@
     // 按"Enter"事件監聽
     addEventListener("keydown",(e)=>{
         console.log(e.key)
-        if(e.key === "Enter"){
-            showText();
-        }
-        // 如果沒出黑框才能切換小精靈
         if(!overlay.classList.contains("active")){
+            if(e.key === "Enter"){
+                showText();
+            }
             if(e.key === "ArrowLeft"){
                 EwanActive();
             }
