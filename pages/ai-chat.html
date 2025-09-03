@@ -23,18 +23,19 @@
     </div>
 
     <div class="overlay">
-        <section class="text-box">
+        <!-- 第一頁 -->
+        <section class="text-box page-1 active">
             <div class="container-fluid d-flex flex-column gap-4">
 
                 <div class="d-flex justify-content-between align-items-center py-2">
-                    <a class="d-flex align-items-center" href="ai-chat.html"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
-                    <a class="d-flex align-items-center" href="ai-chat.html"><span class="material-symbols--check-rounded"></span></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><span class="material-symbols--check-rounded"></span></a>
                 </div>
 
                 <p class="t1b">發現你們48小時沒有聊天了，需要我提供什麼樣類型的話題建議呢？</p>
 
                 <div class="d-flex gap-3">
-                    <div class="text-box-btn w-50">搞笑趣味</div>
+                    <div onclick="goToPage(2)" class="text-box-btn w-50">搞笑趣味</div>
                     <div class="text-box-btn w-50">溫馨共鳴</div>
                 </div>
                 <div class="d-flex gap-3">
@@ -46,6 +47,30 @@
                 <div class="dark-bar"></div>
             </div>
         </section>
+
+        <!-- 第二頁 -->
+
+        <section class="text-box page-2">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="../assets/images/icon/arrow-left.svg" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="../assets/images/icon/refresh.svg" alt="refresh.svg"></a>
+                </div>
+                
+                <div>
+                    <div onclick="copyText('你支持「鳳梨應該放在披薩上」嗎？')" class="chat-tertiary chat mb-4">你支持「鳳梨應該放在披薩上」嗎？</div>
+                    <div onclick="copyText('你吃披薩會把邊吃掉嗎？')" class="chat-tertiary chat mb-4">你吃披薩會把邊吃掉嗎？</div>
+                    <div onclick="copyText('咖哩飯你是拌開派還是不拌派？')" class="chat-tertiary chat">咖哩飯你是拌開派還是不拌派？</div>
+
+                </div>
+                <img class="position-absolute end-0 bottom-0" src="../assets/images/嘟嘴_Ewan.svg" alt="嘟嘴_Ewan.svg">
+
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
     </div>
   
   
@@ -86,6 +111,8 @@
     let textBar = document.getElementById("textBar");
     let Ewan = document.querySelector(".button-Ewan-index");
     let overlay = document.querySelector(".overlay");
+    let textBoxs = document.querySelectorAll(".text-box");
+
 
     // 愛心按鈕切換
     let feedbackGroup = document.querySelectorAll(".feedback-group");
@@ -104,7 +131,24 @@
         feedbackActive.addEventListener("click",feedbackToggle);
         feedbackDefault.addEventListener("click",feedbackToggle);
     })
-    
+
+    // 換頁
+
+    let goToPage = (pageNumber) =>{
+        textBoxs.forEach(box=>{
+            box.classList.remove("active");
+        });
+        document.querySelector(".page-" + pageNumber).classList.add("active");
+    }
+
+    // 按按鈕貼上文字
+    let copyText = (text) =>{
+        overlayDisabled();
+        EwanDisabled();
+        aiInput.value = text;
+    }
+
+
     // 透明黑框的開啟與關閉
     let overlayActive = () =>{
         overlay.classList.add("active");
@@ -112,6 +156,7 @@
 
     let overlayDisabled = () =>{
         overlay.classList.remove("active");
+        goToPage(1);
     }
 
     // 小精靈的開啟與關閉
@@ -138,6 +183,14 @@
 
     Ewan.addEventListener("click",overlayActive);
     overlay.addEventListener("click",overlayDisabled);
+    textBoxs.forEach((textBox)=>{
+            textBox.addEventListener("click",(e)=>{
+            e.stopPropagation();// 阻止事件冒泡
+        })
+
+    })
+        
+        
 
 
     // 按"Enter"事件監聽
