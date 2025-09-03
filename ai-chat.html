@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-  <script type="module" crossorigin src="/eaterhood-teams/assets/main-BNKmXj3P.js"></script>
-  <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-dJGVPlOg.css">
+  <script type="module" crossorigin src="/eaterhood-teams/assets/main-Crcvqw_Z.js"></script>
+  <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-dH7cA3Ai.css">
 </head>
 <body>
 
@@ -24,18 +24,19 @@
     </div>
 
     <div class="overlay">
-        <section class="text-box">
+        <!-- 第一頁 -->
+        <section class="text-box page-1 active">
             <div class="container-fluid d-flex flex-column gap-4">
 
                 <div class="d-flex justify-content-between align-items-center py-2">
-                    <a class="d-flex align-items-center" href="ai-chat.html"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.7256%2011.7C8.7256%2011.5667%208.74627%2011.4417%208.7876%2011.325C8.82894%2011.2083%208.89994%2011.1%209.0006%2011L13.6006%206.4C13.7839%206.21667%2014.0173%206.125%2014.3006%206.125C14.5839%206.125%2014.8173%206.21667%2015.0006%206.4C15.1839%206.58333%2015.2756%206.81667%2015.2756%207.1C15.2756%207.38333%2015.1839%207.61667%2015.0006%207.8L11.1006%2011.7L15.0006%2015.6C15.1839%2015.7833%2015.2756%2016.0167%2015.2756%2016.3C15.2756%2016.5833%2015.1839%2016.8167%2015.0006%2017C14.8173%2017.1833%2014.5839%2017.275%2014.3006%2017.275C14.0173%2017.275%2013.7839%2017.1833%2013.6006%2017L9.0006%2012.4C8.9006%2012.3%208.8296%2012.1917%208.7876%2012.075C8.7456%2011.9583%208.72493%2011.8333%208.7256%2011.7Z'%20fill='%23363533'/%3e%3c/svg%3e" alt="arrow-left.svg"></a>
-                    <a class="d-flex align-items-center" href="ai-chat.html"><span class="material-symbols--check-rounded"></span></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.7256%2011.7C8.7256%2011.5667%208.74627%2011.4417%208.7876%2011.325C8.82894%2011.2083%208.89994%2011.1%209.0006%2011L13.6006%206.4C13.7839%206.21667%2014.0173%206.125%2014.3006%206.125C14.5839%206.125%2014.8173%206.21667%2015.0006%206.4C15.1839%206.58333%2015.2756%206.81667%2015.2756%207.1C15.2756%207.38333%2015.1839%207.61667%2015.0006%207.8L11.1006%2011.7L15.0006%2015.6C15.1839%2015.7833%2015.2756%2016.0167%2015.2756%2016.3C15.2756%2016.5833%2015.1839%2016.8167%2015.0006%2017C14.8173%2017.1833%2014.5839%2017.275%2014.3006%2017.275C14.0173%2017.275%2013.7839%2017.1833%2013.6006%2017L9.0006%2012.4C8.9006%2012.3%208.8296%2012.1917%208.7876%2012.075C8.7456%2011.9583%208.72493%2011.8333%208.7256%2011.7Z'%20fill='%23363533'/%3e%3c/svg%3e" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><span class="material-symbols--check-rounded"></span></a>
                 </div>
 
                 <p class="t1b">發現你們48小時沒有聊天了，需要我提供什麼樣類型的話題建議呢？</p>
 
                 <div class="d-flex gap-3">
-                    <div class="text-box-btn w-50">搞笑趣味</div>
+                    <div onclick="goToPage(2)" class="text-box-btn w-50">搞笑趣味</div>
                     <div class="text-box-btn w-50">溫馨共鳴</div>
                 </div>
                 <div class="d-flex gap-3">
@@ -47,6 +48,30 @@
                 <div class="dark-bar"></div>
             </div>
         </section>
+
+        <!-- 第二頁 -->
+
+        <section class="text-box page-2">
+            <div class="container-fluid d-flex flex-column gap-4">
+
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <a class="d-flex align-items-center" onclick="goToPage(1)"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.7256%2011.7C8.7256%2011.5667%208.74627%2011.4417%208.7876%2011.325C8.82894%2011.2083%208.89994%2011.1%209.0006%2011L13.6006%206.4C13.7839%206.21667%2014.0173%206.125%2014.3006%206.125C14.5839%206.125%2014.8173%206.21667%2015.0006%206.4C15.1839%206.58333%2015.2756%206.81667%2015.2756%207.1C15.2756%207.38333%2015.1839%207.61667%2015.0006%207.8L11.1006%2011.7L15.0006%2015.6C15.1839%2015.7833%2015.2756%2016.0167%2015.2756%2016.3C15.2756%2016.5833%2015.1839%2016.8167%2015.0006%2017C14.8173%2017.1833%2014.5839%2017.275%2014.3006%2017.275C14.0173%2017.275%2013.7839%2017.1833%2013.6006%2017L9.0006%2012.4C8.9006%2012.3%208.8296%2012.1917%208.7876%2012.075C8.7456%2011.9583%208.72493%2011.8333%208.7256%2011.7Z'%20fill='%23363533'/%3e%3c/svg%3e" alt="arrow-left.svg"></a>
+                    <a class="d-flex align-items-center" onclick="overlayDisabled()"><img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.6201%2019.1135C8.47798%2019.1135%205.12012%2015.9286%205.12012%2011.9999C5.12012%209.51644%206.46195%207.33019%208.49549%206.05781M13.7564%204.96753C17.3593%205.48689%2020.1201%208.43762%2020.1201%2011.9999C20.1201%2014.5626%2018.6913%2016.8088%2016.5481%2018.061M13.558%206.77251L11.5693%204.88625L13.558%203V6.77251ZM11.5685%2017.2275L13.5572%2019.1137L11.5685%2021L11.5685%2017.2275Z'%20stroke='%23363533'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="refresh.svg"></a>
+                </div>
+                
+                <div>
+                    <div onclick="copyText('你支持「鳳梨應該放在披薩上」嗎？')" class="chat-tertiary chat mb-4">你支持「鳳梨應該放在披薩上」嗎？</div>
+                    <div onclick="copyText('你吃披薩會把邊吃掉嗎？')" class="chat-tertiary chat mb-4">你吃披薩會把邊吃掉嗎？</div>
+                    <div onclick="copyText('咖哩飯你是拌開派還是不拌派？')" class="chat-tertiary chat">咖哩飯你是拌開派還是不拌派？</div>
+
+                </div>
+                <img class="position-absolute end-0 bottom-0" src="data:image/svg+xml,%3csvg%20width='145'%20height='121'%20viewBox='0%200%20145%20121'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M155.934%2079.5819C178.673%20141.748%20117.774%20151.871%2081.8414%20146.595C42.6442%20140.839%20-5.62725%20124.261%2028.9524%2064.4636C63.5321%204.66611%2078.5773%209.30633%20101.507%2012.6735C124.437%2016.0407%20133.196%2017.416%20155.934%2079.5819Z'%20fill='%23F6A94C'/%3e%3cpath%20d='M76.6074%2022.2671C76.6855%2023.9161%2077.5615%2027.2964%2080.4411%2027.6258C83.3207%2027.9551%2087.0433%2025.518%2088.5446%2024.2584'%20stroke='white'%20stroke-width='4.52772'%20stroke-linecap='round'/%3e%3cpath%20d='M89.1035%2024.1021C89.1816%2025.7511%2090.0576%2029.1314%2092.9372%2029.4607C95.8168%2029.79%2099.5393%2027.353%20101.041%2026.0933'%20stroke='white'%20stroke-width='4.52772'%20stroke-linecap='round'/%3e%3crect%20x='54.1172'%20y='31.549'%20width='31.694'%20height='31.694'%20rx='15.847'%20transform='rotate(8.35397%2054.1172%2031.549)'%20fill='white'/%3e%3ccircle%20cx='67.4945'%20cy='49.5303'%20r='12.4512'%20transform='rotate(8.35397%2067.4945%2049.5303)'%20fill='%23232323'/%3e%3crect%20x='93.3164'%20y='37.3054'%20width='31.694'%20height='31.694'%20rx='15.847'%20transform='rotate(8.35397%2093.3164%2037.3054)'%20fill='white'/%3e%3ccircle%20cx='106.694'%20cy='55.2866'%20r='12.4512'%20transform='rotate(8.35397%20106.694%2055.2866)'%20fill='%23232323'/%3e%3cellipse%20cx='84.5601'%20cy='65.7653'%20rx='3.39579'%20ry='2.26386'%20transform='rotate(8.35397%2084.5601%2065.7653)'%20fill='white'/%3e%3crect%20x='58.418'%20y='119.131'%20width='22.6386'%20height='39.6175'%20rx='11.3193'%20transform='rotate(8.35397%2058.418%20119.131)'%20fill='%23F6A94C'/%3e%3crect%20x='99.832'%20y='81.5489'%20width='22.6386'%20height='30.2769'%20rx='11.3193'%20transform='rotate(-36.1822%2099.832%2081.5489)'%20fill='%23C06D14'/%3e%3crect%20x='76.3223'%20y='96.5216'%20width='22.6386'%20height='35.7498'%20rx='11.3193'%20transform='rotate(133.088%2076.3223%2096.5216)'%20fill='%23CD6F0A'/%3e%3cpath%20d='M85.6895%2071.3788C84.6612%2071.5727%2082.6116%2072.2477%2082.639%2073.3968C82.6663%2074.5459%2084.4977%2075.7474%2085.41%2076.2045'%20stroke='white'%20stroke-width='2.87818'%20stroke-linecap='round'/%3e%3cpath%20d='M85.5547%2076.4055C84.5265%2076.5994%2082.4769%2077.2744%2082.5042%2078.4235C82.5316%2079.5726%2084.363%2080.7741%2085.2752%2081.2312'%20stroke='white'%20stroke-width='2.87818'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="嘟嘴_Ewan.svg">
+
+            <div class="dark-bar-container">
+                <div class="dark-bar"></div>
+            </div>
+        </section>
+
     </div>
   
   
@@ -83,9 +108,9 @@
                 <input id="aiInput" type="text" class="t2 w-100 p-0" placeholder="傳送訊息....">
             </div>
         </div>
-        <div class="light-bar-container">
-            <div class="light-bar"></div>
-        </div>
+    </div>
+    <div class="light-bar-container">
+        <div class="light-bar"></div>
     </div>
 </footer>  
   
@@ -98,6 +123,8 @@
     let textBar = document.getElementById("textBar");
     let Ewan = document.querySelector(".button-Ewan-index");
     let overlay = document.querySelector(".overlay");
+    let textBoxs = document.querySelectorAll(".text-box");
+
 
     // 愛心按鈕切換
     let feedbackGroup = document.querySelectorAll(".feedback-group");
@@ -116,7 +143,24 @@
         feedbackActive.addEventListener("click",feedbackToggle);
         feedbackDefault.addEventListener("click",feedbackToggle);
     })
-    
+
+    // 換頁
+
+    let goToPage = (pageNumber) =>{
+        textBoxs.forEach(box=>{
+            box.classList.remove("active");
+        });
+        document.querySelector(".page-" + pageNumber).classList.add("active");
+    }
+
+    // 按按鈕貼上文字
+    let copyText = (text) =>{
+        overlayDisabled();
+        EwanDisabled();
+        aiInput.value = text;
+    }
+
+
     // 透明黑框的開啟與關閉
     let overlayActive = () =>{
         overlay.classList.add("active");
@@ -124,6 +168,7 @@
 
     let overlayDisabled = () =>{
         overlay.classList.remove("active");
+        goToPage(1);
     }
 
     // 小精靈的開啟與關閉
@@ -150,6 +195,14 @@
 
     Ewan.addEventListener("click",overlayActive);
     overlay.addEventListener("click",overlayDisabled);
+    textBoxs.forEach((textBox)=>{
+            textBox.addEventListener("click",(e)=>{
+            e.stopPropagation();// 阻止事件冒泡
+        })
+
+    })
+        
+        
 
 
     // 按"Enter"事件監聽
