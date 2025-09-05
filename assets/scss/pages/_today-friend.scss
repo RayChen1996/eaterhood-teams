@@ -61,11 +61,11 @@
 /* 配對按鈕 */
 .fixed-right {
     position: absolute ;
-    top: 450px;
+    bottom: 109px;
     right: 16px ;
     z-index: 2;
 
-    .match {
+    a.match {
         background: white;
         gap: 10px;
         width: 48px;
@@ -76,12 +76,15 @@
         align-items: center;
         justify-content: center; 
         box-shadow: 2px 2px 8px 0px rgba(244, 144, 43, 0.4);
-    }
-    a {
         text-decoration: none;
-        :hover{
+        &:hover {
             border: 2px solid #FAC677;
             background: #FEF5E2;
         }
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
+
 }
