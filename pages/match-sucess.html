@@ -12,8 +12,9 @@
   <body>
     <div class="phone">
       <div class="screen">
-        <%- include('./layout/header-p300'); -%>
+        
         <main class="match-main">
+          <%- include('./layout/header-p300'); -%>
           <!-- 導覽列 -->
         <Section class="container">
           <div class="d-flex justify-content-between py-2">
@@ -36,7 +37,10 @@
               <img src="../assets/images/match/wave-lightcolor.svg" alt="overlay" class="rounded-3 position-absolute bottom-0">
               
               <div class="position-absolute bottom-0 ps-4 mb-3">
-                <h1 class="h4 text-t500 mb-1">Ken 28</h1>
+                <div class="d-flex mb-1">
+                      <h1 class="h4 text-t500 me-2">Ken 28</h1>
+                      <img src="../assets/images/icon/approve.svg" alt="approve"> 
+                    </div>
                 <div class="d-flex mb-3 align-items-center">
                   <span class="material-symbols-outlined me-1">location_on</span>
                   <p class="t2 me-1">台北市信義區
@@ -44,7 +48,7 @@
                   </p>                  
                 </div>
                 <p class="t3 mb-1 text-n300">你們的共同標籤</p>            
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap mb-2">
                     <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">人生不能沒有手搖</span>
                     <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">我真的愛吃</span>
                     <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">辣食控</span>
@@ -71,7 +75,18 @@
         <div class="container pb-6">
           <input class="form-control rounded-pill bg-white" type="text" placeholder="傳送訊息...." aria-label="default input example">
         </div>
+        <div>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+              <span class="material-symbols-outlined text-white heart">favorite</span>
+            </div>
         </main>
+        
       </div>
     </div>
 
