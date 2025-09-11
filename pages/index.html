@@ -7,402 +7,638 @@
     <title>index</title>
   </head>
   <body>
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt">
+          <!-- 使用者相關資訊 -->
 
-  <div class="phone">
-    <div class="screen">
-  
-      
-      
-      <main class="main main-mb header-bar-mt">
-        
-        <!-- 使用者相關資訊 -->
-        
-        <section class="header-bar">
-          <%- include('./layout/header'); -%>
-          <div class="userbar">
-            <img class="p-1 me-3" src="../assets/images/index/userbar-person.svg" alt="小雨頭貼">
-            <h1 class="t1b text-n500 me-auto">Hi,小雨</h1>
-            <div class="d-flex align-items-center">
-              <a href="#" class="me-1 d-flex align-items-center warning-dotted-parent"><span class="material-symbols--notifications-outline-rounded"></span><span class="warning-dotted-child"></span></a>
-              <a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a>
+          <section class="header-bar">
+            <%- include('./layout/header'); -%>
+            <div class="userbar">
+              <img
+                class="p-1 me-3"
+                src="../assets/images/index/userbar-person.svg"
+                alt="小雨頭貼"
+              />
+              <h1 class="t1b text-n500 me-auto">Hi,小雨</h1>
+              <div class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="p-2 me-1 d-flex align-items-center warning-dotted-parent"
+                  ><span
+                    class="material-symbols--notifications-outline-rounded"
+                  ></span
+                  ><span class="warning-dotted-child"></span
+                ></a>
+                <a href="#" class="box-40px p-2"
+                  ><img
+                    class="bookmark-btn"
+                    src="../assets/images/icon/bookmark_default.svg"
+                    alt="bookmark_default.svg"
+                /></a>
+              </div>
             </div>
+          </section>
 
-          </div>
-        </section>
-        
-        <!-- 揪吃飯、找飯友 -->
-        
-        <section class="container-fluid">
-          <div class="d-flex">
-            <a href="#" class="btn btn-primary btn-lg border-0 w-50 d-flex justify-content-center align-items-center me-2">
-              <img class="img-fluid icon-primary me-2" src="../assets/images/index/face-small-icon_Ewan.svg" alt="face-small-icon_Ewan">
-              <span class="d-inline-block t1b">揪吃飯</span>
-            </a>
-            <a href="find-friend.html" class="btn btn-secondary btn-lg border-0 w-50 d-flex justify-content-center align-items-center">
-              <img class="img-fluid icon-primary me-2" src="../assets/images/index/face-small-icon_Iwan.svg" alt="face-small-icon_Iwan">
-              <span class="d-inline-block t1b">找飯友</span>
-            </a>
-          </div>
-        </section>
-        
-        <!-- 離我最近的飯友(標題) -->
-        
-        <section class="container-fluid">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="h4 text-t500">離我最近的飯友</h2>
-            <div class="d-flex align-items-center text-n300">
-              <p class="t2 me-1">查看所有</p>
-              <a href="find-friend.html" class="d-flex align-items-center"><span class="material-symbols--keyboard-arrow-right"></span></a>
+          <!-- 揪吃飯、找飯友 -->
+
+          <section class="container-fluid">
+            <div class="d-flex">
+              <a
+                href="#"
+                class="rounded-pill btn btn-primary btn-lg border-0 w-50 d-flex justify-content-center align-items-center me-2"
+              >
+                <img
+                  class="img-fluid icon-primary me-2"
+                  src="../assets/images/index/face-small-icon_Ewan.svg"
+                  alt="face-small-icon_Ewan"
+                />
+                <span class="d-inline-block t1b">揪吃飯</span>
+              </a>
+              <a
+                href="find-friend.html"
+                class="rounded-pill btn btn-secondary btn-lg border-0 w-50 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class="img-fluid icon-primary me-2"
+                  src="../assets/images/index/face-small-icon_Iwan.svg"
+                  alt="face-small-icon_Iwan"
+                />
+                <span class="d-inline-block t1b">找飯友</span>
+              </a>
             </div>
-          </div>
-        </section>
-      
-        <!-- 離我最近的飯友(卡片) -->
-      
-        <section class="ms-4">
-          <div class="card-scroll">
-            <!-- 1 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-01.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-01">
-                  <div class="card-tag card-tag-bottom card-tag-primary">咖啡成癮</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人喝咖啡</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      Ken / 28
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
+          </section>
+
+          <!-- 離我最近的飯友(標題) -->
+
+          <section class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="h4 text-t500">離我最近的飯友</h2>
+              <div class="d-flex align-items-center text-n300">
+                <p class="t2 me-1">查看所有</p>
+                <a href="find-friend.html" class="d-flex align-items-center"
+                  ><span class="material-symbols--keyboard-arrow-right"></span
+                ></a>
               </div>
-            </article>
-            <!-- 2 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-02.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-02">
-                  <div class="card-tag card-tag-bottom card-tag-primary">找肉桂捲同好</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人喝下午茶</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      小潔 / 25
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 3 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-03.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-03">
-                  <div class="card-tag card-tag-bottom card-tag-primary">愛甜食</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人吃提拉米蘇</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      Emily / 26
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 4 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-04.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-04">
-                  <div class="card-tag card-tag-bottom card-tag-primary">一起吃鍋</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人吃火鍋</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      宣萱 / 25
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 5 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-05.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-05">
-                  <div class="card-tag card-tag-bottom card-tag-primary">減肥飲控</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人吃健康餐</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      Annie / 26
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 6 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-06.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-06">
-                  <div class="card-tag card-tag-bottom card-tag-primary">我愛西餐</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人吃義大利麵</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      Cece / 24
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 7 -->
-            <article class="card-scroll-item">
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEaters-07.svg" class="card-img-top aspect-NearbyEaters" alt="NearbyEaters-07">
-                  <div class="card-tag card-tag-bottom card-tag-primary">披薩配啤酒</div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3">正在找人吃披薩</h3>
-                  <div class="d-flex align-items-center">
-                    <p class="text-t500 me-auto t2">
-                      Tommy / 31
-                    </p>
-                    <div class="card-icon-text gap-0 text-n500">
-                      <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                      <p>1km</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-      
-      
-        <!-- 看看E丸為你推薦的揪飯活動有哪些？ -->
-      
-        <section class="Ewanbar">
-          <img class="Ewanbar-img" src="../assets/images/index/Ewanbar.svg" alt="Ewanbar">
-          <aside class="Ewanbar-aside">
-            <p class="Ewanbar-aside-text t2">看看E丸為你推薦的揪飯活動有哪些？</p>
-          </aside>
-        </section>
-      
-        <!-- 附近聚會活動(標題) -->
-        
-        <section class="container-fluid">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="h4 text-t500">附近聚會活動</h2>
-            <div class="d-flex align-items-center text-n300">
-              <p class="t2 me-1">查看所有</p>
-              <a href="events.html" class="d-flex align-items-center"><span class="material-symbols--keyboard-arrow-right"></span></a>
             </div>
-          </div>
-        </section>
-      
-        <!-- 附近聚會活動(卡片) -->
-      
-        <section class="container-fluid">
-          <div class="row row-cols-2 g-4">
-            <!-- 1 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-01.svg" class="card-img-top" alt="NearbyEvents-01">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
+          </section>
+
+          <!-- 離我最近的飯友(卡片) -->
+
+          <section class="ms-4">
+            <div class="card-scroll">
+              <!-- 1 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-01.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-01"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      咖啡成癮
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人喝咖啡</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">Ken / 28</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">晨型人健康早餐</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>7/20</p>
+              </article>
+              <!-- 2 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-02.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-02"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      找肉桂捲同好
+                    </div>
                   </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>9:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市信義區</p>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人喝下午茶</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">小潔 / 25</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </article>
+              <!-- 3 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-03.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-03"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      愛甜食
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人吃提拉米蘇</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">Emily / 26</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- 4 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-04.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-04"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      一起吃鍋
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人吃火鍋</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">宣萱 / 25</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- 5 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-05.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-05"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      減肥飲控
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人吃健康餐</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">Annie / 26</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- 6 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-06.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-06"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      我愛西餐
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人吃義大利麵</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">Cece / 24</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- 7 -->
+              <article class="card-scroll-item">
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-07.svg"
+                      class="card-img-top aspect-NearbyEaters"
+                      alt="NearbyEaters-07"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      披薩配啤酒
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3">正在找人吃披薩</h3>
+                    <div class="d-flex align-items-center">
+                      <p class="text-t500 me-auto t2">Tommy / 31</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span>
+                          <span>1km</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- 看看E丸為你推薦的揪飯活動有哪些？ -->
+
+          <section class="Ewanbar">
+            <img
+              class="Ewanbar-img"
+              src="../assets/images/index/Ewanbar.svg"
+              alt="Ewanbar"
+            />
+            <aside class="Ewanbar-aside">
+              <p class="Ewanbar-aside-text t2">
+                看看E丸為你推薦的揪飯活動有哪些？
+              </p>
+            </aside>
+          </section>
+
+          <!-- 附近聚會活動(標題) -->
+
+          <section class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="h4 text-t500">附近聚會活動</h2>
+              <div class="d-flex align-items-center text-n300">
+                <p class="t2 me-1">查看所有</p>
+                <a href="events.html" class="d-flex align-items-center"
+                  ><span class="material-symbols--keyboard-arrow-right"></span
+                ></a>
               </div>
-            </article>
-            <!-- 2 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-02.svg" class="card-img-top" alt="NearbyEvents-02">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img  class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">義式料理小聚</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>7/27</p>
+            </div>
+          </section>
+
+          <!-- 附近聚會活動(卡片) -->
+
+          <section class="container-fluid">
+            <div class="row row-cols-2 g-4">
+              <!-- 1 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-01.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-01"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
                   </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>19:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市大安區</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 3 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-03.svg" class="card-img-top" alt="NearbyEvents-03">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">海邊小酌</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>8/30</p>
-                  </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>19:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市中山區</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!-- 4 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-04.svg" class="card-img-top" alt="NearbyEvents-04">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">來一口微醺 再認識你</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>7/28</p>
-                  </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>19:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市大安區</p>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">晨型人健康早餐</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>7/20</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>9:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市信義區</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <!-- 5 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-05.svg" class="card-img-top" alt="NearbyEvents-05">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
+              </article>
+              <!-- 2 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-02.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-02"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">義式料理小聚</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>7/27</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>19:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市大安區</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">烤肉配朋友最對味</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>7/23</p>
+              </article>
+              <!-- 3 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-03.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-03"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
                   </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>19:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市大安區</p>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">海邊小酌</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>8/30</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>19:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市中山區</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
-            <!-- 6 -->
-            <article>
-              <div class="card t3">
-                <div class="position-relative">
-                  <img src="../assets/images/index/NearbyEvents-06.svg" class="card-img-top" alt="NearbyEvents-06">
-                  <div class="card-tag card-tag-bottom card-tag-secondary">4/6人</div>
-                  <div class="card-tag card-tag-top"><a href="#"><img class="bookmark-btn" src="../assets/images/icon/bookmark_default.svg" alt="bookmark_default.svg"></a></div>
+              </article>
+              <!-- 4 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-04.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-04"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">來一口微醺 再認識你</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>7/28</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>19:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市大安區</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h3 class="card-title t3 text-n500">熱門網紅店踩點</h3>
-                  <div class="card-icon-text me-2 mb-1">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--calendar-today-outline-rounded box-12px"></span></a>
-                    <p>7/26</p>
+              </article>
+              <!-- 5 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-05.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-05"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
                   </div>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--schedule-outline-rounded box-12px"></span></a>
-                    <p>19:00</p>
-                  </div>
-                  <br>
-                  <div class="card-icon-text">
-                    <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
-                    <p>台北市大安區</p>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">烤肉配朋友最對味</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>7/23</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>19:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市大安區</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
-          </div>
-        </section>
-      
-      </main>
-  
-      <%- include('./layout/footer-phone'); -%>
-  
-  
+              </article>
+              <!-- 6 -->
+              <article>
+                <div class="card t3">
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEvents-06.svg"
+                      class="card-img-top"
+                      alt="NearbyEvents-06"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-secondary">
+                      4/6人
+                    </div>
+                    <div class="card-tag card-tag-top">
+                      <a href="#"
+                        ><img
+                          class="bookmark-btn"
+                          src="../assets/images/icon/bookmark_default.svg"
+                          alt="bookmark_default.svg"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title t3 text-n500">熱門網紅店踩點</h3>
+                    <div class="card-icon-text me-2 mb-1">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--calendar-today-outline-rounded box-12px"
+                        ></span>
+                        <span>7/26</span>
+                      </a>
+                    </div>
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--schedule-outline-rounded box-12px"
+                        ></span>
+                        <span>19:00</span>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="card-icon-text">
+                      <a href="#" class="d-flex align-items-center gap-1"
+                        ><span
+                          class="material-symbols--location-on-outline-rounded box-12px"
+                        ></span>
+                        <span>台北市大安區</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <%- include('./layout/footer-phone'); -%>
+      </div>
     </div>
-  </div>
 
     <script type="module" src="../main.js"></script>
   </body>
