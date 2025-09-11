@@ -1,154 +1,199 @@
 // Color
 
-$p500: #F4902B;
-$p400: #F6A341;
-$p300: #FAC677;
-$p200: #FCDEAC;
-$p100: #FEF5E2;
-$p50: #FAF6F0;
+$p500: #f4902b;
+$p400: #f6a341;
+$p300: #fac677;
+$p200: #fcdeac;
+$p100: #fef5e2;
+$p50: #faf6f0;
 
-$s500: #6D9651;
-$s400: #8DB375;
-$s300: #A5C68F;
-$s200: #D7E6CC;
-$s100: #EBF3E5;
+$s500: #6d9651;
+$s400: #8db375;
+$s300: #a5c68f;
+$s200: #d7e6cc;
+$s100: #ebf3e5;
 
-$t500: #6B4C3B;
+$t500: #6b4c3b;
 $t400: #866348;
-$t300: #9D7A55;
-$t200: #AC8C63;
-$t100: #BFA885;  
+$t300: #9d7a55;
+$t200: #ac8c63;
+$t100: #bfa885;
 
 $n500: #363533;
-$n400: #524F4C;
-$n300: #726E68;
-$n200: #B3AFAD;
-$n100: #E8E7E5;
-$n000: #FFFFFF;
+$n400: #524f4c;
+$n300: #726e68;
+$n200: #b3afad;
+$n100: #e8e7e5;
+$n000: #ffffff;
 
-$su300: #64A939;
-$su200: #A4D77F;
-$su100: #E2F3D4;
+$su300: #64a939;
+$su200: #a4d77f;
+$su100: #e2f3d4;
 
-$d300: #F64C4C;
-$d200: #FFA2A2;
-$d100: #FFE1E1;
+$d300: #f64c4c;
+$d200: #ffa2a2;
+$d100: #ffe1e1;
 
-$w300: #D58300;
-$w200: #FFC110;
-$w100: #FFEB88;
+$w300: #d58300;
+$w200: #ffc110;
+$w100: #ffeb88;
 
 $color-primary: (
-  p500:  $p500,
-  p400:  $p400,
-  p300:  $p300,
-  p200:  $p200,
-  p100:  $p100,
-  p50:   $p50,
+  p500: $p500,
+  p400: $p400,
+  p300: $p300,
+  p200: $p200,
+  p100: $p100,
+  p50: $p50,
 );
 
 $color-secondary: (
-  s500:  $s500,
-  s400:  $s400,
-  s300:  $s300,
-  s200:  $s200,
-  s100:  $s100,
+  s500: $s500,
+  s400: $s400,
+  s300: $s300,
+  s200: $s200,
+  s100: $s100,
 );
 
 $color-tertiary: (
-  t500:  $t500,
-  t400:  $t400,
-  t300:  $t300,
-  t200:  $t200,
-  t100:  $t100,
+  t500: $t500,
+  t400: $t400,
+  t300: $t300,
+  t200: $t200,
+  t100: $t100,
 );
 
 $color-neutral: (
-  n500:  $n500,
-  n400:  $n400,
-  n300:  $n300,
-  n200:  $n200,
-  n100:  $n100,
-  n000:  $n000,
+  n500: $n500,
+  n400: $n400,
+  n300: $n300,
+  n200: $n200,
+  n100: $n100,
+  n000: $n000,
 );
 
 $color-success: (
-  su300:  $su300,
-  su200:  $su200,
-  su100:  $su100,
+  su300: $su300,
+  su200: $su200,
+  su100: $su100,
 );
 
 $color-danger: (
-  d300:  $d300,
-  d200:  $d200,
-  d100:  $d100,
+  d300: $d300,
+  d200: $d200,
+  d100: $d100,
 );
 
 $color-warning: (
-  w300:  $w300,
-  w200:  $w200,
-  w100:  $w100,
+  w300: $w300,
+  w200: $w200,
+  w100: $w100,
 );
 
-$theme-colors:();
-$theme-colors: map-merge($theme-colors,$color-primary);
-$theme-colors: map-merge($theme-colors,$color-secondary);
-$theme-colors: map-merge($theme-colors,$color-tertiary);
-$theme-colors: map-merge($theme-colors,$color-neutral);
-$theme-colors: map-merge($theme-colors,$color-success);
-$theme-colors: map-merge($theme-colors,$color-danger);
-$theme-colors: map-merge($theme-colors,$color-warning);
+$theme-colors: ();
+$theme-colors: map-merge($theme-colors, $color-primary);
+$theme-colors: map-merge($theme-colors, $color-secondary);
+$theme-colors: map-merge($theme-colors, $color-tertiary);
+$theme-colors: map-merge($theme-colors, $color-neutral);
+$theme-colors: map-merge($theme-colors, $color-success);
+$theme-colors: map-merge($theme-colors, $color-danger);
+$theme-colors: map-merge($theme-colors, $color-warning);
 
 // Spacing
 
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .25, //4px
-  2: $spacer * .5,  //8px
-  3: $spacer * .75, //12px
-  4: $spacer * 1,   //16px
-  5: $spacer * 1.5, //24px
-  6: $spacer * 2,   //32px
-  7: $spacer * 2.5, //40px
-  8: $spacer * 3,   //48px
-  9: $spacer * 4,   //64px
+  1: $spacer * 0.25,
+  //4px
+  2: $spacer * 0.5,
+  //8px
+  3: $spacer * 0.75,
+  //12px
+  4: $spacer * 1,
+  //16px
+  5: $spacer * 1.5,
+  //24px
+  6: $spacer * 2,
+  //32px
+  7: $spacer * 2.5,
+  //40px
+  8: $spacer * 3,
+  //48px
+  9: $spacer * 4,
+  //64px
 );
 
 // Radius
 
-$border-radius:        .5rem;      //8px
-$border-radius-sm:     .25rem;     //4px
-$border-radius-lg:     1rem;       //16px
-$border-radius-xl:     1.5rem;     //24px
-$border-radius-pill:   62.4375rem; //999px
+$border-radius: 0.5rem; //8px
+$border-radius-sm: 0.25rem; //4px
+$border-radius-lg: 1rem; //16px
+$border-radius-xl: 1.5rem; //24px
+$border-radius-pill: 62.4375rem; //999px
 
 // Heading
 
-$headings-margin-bottom:      0;
-$headings-font-weight:        600;
-$headings-line-height:        1.2;
+$headings-margin-bottom: 0;
+$headings-font-weight: 600;
+$headings-line-height: 1.2;
 
 // Paragraph
 
-$paragraph-margin-bottom:   0;
+$paragraph-margin-bottom: 0;
 
 // Grid
 
-$grid-gutter-width:           2rem;
+$grid-gutter-width: 2rem;
 
 // Font-scale
 
 $font-scale: (
-  h1: (35,1.2,600),
-  h2: (29,1.2,600),
-  h3: (24,1.2,600),
-  h4: (20,1.2,600),
-  t1b: (17,1.4,500),
-  t2b: (14,1.4,500),
-  t1: (17,1.4,400),
-  t2: (14,1.4,400),
-  t3: (12,1.4,400),
+  h1: (
+    35,
+    1.2,
+    600,
+  ),
+  h2: (
+    29,
+    1.2,
+    600,
+  ),
+  h3: (
+    24,
+    1.2,
+    600,
+  ),
+  h4: (
+    20,
+    1.2,
+    600,
+  ),
+  t1b: (
+    17,
+    1.4,
+    500,
+  ),
+  t2b: (
+    14,
+    1.4,
+    500,
+  ),
+  t1: (
+    17,
+    1.4,
+    400,
+  ),
+  t2: (
+    14,
+    1.4,
+    400,
+  ),
+  t3: (
+    12,
+    1.4,
+    400,
+  ),
 );
 
 // Box-size
@@ -157,14 +202,14 @@ $box-size: (12);
 
 // Cards
 
-$card-spacer-y:                     8px;
-$card-spacer-x:                     8px;
-$card-title-spacer-y:               $spacer * .25;
+$card-spacer-y: 8px;
+$card-spacer-x: 8px;
+$card-title-spacer-y: $spacer * 0.25;
 // $card-title-color:                  null !default;
 // $card-subtitle-color:               null !default;
-$card-border-width:                 1px;
-$card-border-color:                 $n100;
-$card-border-radius:                $border-radius-lg;
+$card-border-width: 1px;
+$card-border-color: $n100;
+$card-border-radius: $border-radius-lg;
 // $card-box-shadow:                   null !default;
 // $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 // $card-cap-padding-y:                $card-spacer-y * .5 !default;
@@ -172,12 +217,12 @@ $card-border-radius:                $border-radius-lg;
 // $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
 // $card-cap-color:                    null !default;
 // $card-height:                       null !default;
-$card-color:                        $n300;
-$card-bg:                           $n000;
+$card-color: $n300;
+$card-bg: $n000;
 // $card-img-overlay-padding:          $spacer !default;
 // $card-group-margin:                 $grid-gutter-width * .5 !default;
 
 // Body
 
 // $body-color:                $gray-900 !default;
-$body-bg:                   $p100;
+$body-bg: $p100;
