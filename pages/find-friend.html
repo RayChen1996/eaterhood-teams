@@ -7,183 +7,227 @@
     <title>index</title>
   </head>
   <body>
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt">
+          <!-- 找飯友 -->
 
-<div class="phone">
-    <div class="screen">
-
-
-        
-        <main class="main main-mb  header-bar-mt">
-            
-            <!-- 找飯友 -->
-            
-            <section class=" header-bar">
-                <%- include('./layout/header'); -%>
-                <div class="container  my-4">
-                    <div class="d-flex justify-content-between">
-                        <a href="index.html" class="d-flex align-items-center"><span class="material-symbols--keyboard-arrow-left"></span></a>
-                        <a href="#" class="d-flex align-items-center"><h1 class="t1b">找飯友</h1></a>
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--page-info-outline-rounded"></span></a>
-                    </div>
-
-                </div>
-            </section>
-        
-            <!-- 我可以幫你抽飯友喔！ -->
-        
-            <div class="button-Iwan-index">
-                <a class="d-flex align-items-start" href="draw-friend.html">
-                    <span class="button-Iwan mt-2">
-                        <span class="mt-2">我可以幫你抽飯友喔！</span>
-                    </span>
-                    <img src="../assets/images/find-friend/ai button_Iwan.svg" alt="ai button_Iwan">
-                </a>
+          <section class="header-bar">
+            <%- include('./layout/header'); -%>
+            <div class="container my-2">
+              <div class="d-flex justify-content-between py-2">
+                <a href="index.html" class="d-flex align-items-center"
+                  ><span class="material-symbols--keyboard-arrow-left"></span
+                ></a>
+                <a href="#" class="d-flex align-items-center"
+                  ><h1 class="t1b">找飯友</h1></a
+                >
+                <a href="#" class="d-flex align-items-center"
+                  ><span
+                    class="material-symbols--page-info-outline-rounded"
+                  ></span
+                ></a>
+              </div>
             </div>
-        
-            <!-- 離我最近的飯友(卡片) -->
-        
-            <section class="container-fluid">
+          </section>
+
+          <!-- 我可以幫你抽飯友喔！ -->
+
+          <div class="button-Iwan-index">
+            <a class="d-flex align-items-start" href="draw-friend.html">
+              <span class="button-Iwan mt-2 t3"> 我可以幫你抽飯友喔！ </span>
+              <img
+                src="../assets/images/find-friend/ai button_Iwan.svg"
+                alt="ai button_Iwan"
+              />
+            </a>
+          </div>
+
+          <!-- 離我最近的飯友(卡片) -->
+
+          <section class="container-fluid">
             <div class="row row-cols-2 g-4">
-                <!-- 1 -->
-                <article>
+              <!-- 1 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-01.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-01">
-                    <div class="card-tag card-tag-bottom card-tag-primary">咖啡成癮</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-01.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-01"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      咖啡成癮
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人喝咖啡</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        Ken / 28
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">Ken / 28</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-                <!-- 4 -->
-                <article>
+              </article>
+              <!-- 4 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-04.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-04">
-                    <div class="card-tag card-tag-bottom card-tag-primary">一起吃鍋</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-04.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-04"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      一起吃鍋
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人吃火鍋</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        宣萱 / 25
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">宣萱 / 25</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-                <!-- 5 -->
-                <article>
+              </article>
+              <!-- 5 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-05.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-05">
-                    <div class="card-tag card-tag-bottom card-tag-primary">減肥飲控</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-05.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-05"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      減肥飲控
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人吃健康餐</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        Annie / 26
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">Annie / 26</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-                <!-- 6 -->
-                <article>
+              </article>
+              <!-- 6 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-06.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-06">
-                    <div class="card-tag card-tag-bottom card-tag-primary">我愛西餐</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-06.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-06"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      我愛西餐
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人吃義大利麵</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        Cece / 24
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">Cece / 24</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-                <!-- 7 -->
-                <article>
+              </article>
+              <!-- 7 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-07.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-07">
-                    <div class="card-tag card-tag-bottom card-tag-primary">披薩配啤酒</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-07.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-07"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      披薩配啤酒
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人吃披薩</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        Tommy / 31
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">Tommy / 31</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-                <!-- 3 -->
-                <article>
+              </article>
+              <!-- 3 -->
+              <article>
                 <div class="card t3">
-                    <div class="position-relative">
-                    <img src="../assets/images/index/NearbyEaters-03.svg" class="card-img-top aspect-find-friend" alt="NearbyEaters-03">
-                    <div class="card-tag card-tag-bottom card-tag-primary">愛甜食</div>
+                  <div class="position-relative">
+                    <img
+                      src="../assets/images/index/NearbyEaters-03.svg"
+                      class="card-img-top aspect-find-friend"
+                      alt="NearbyEaters-03"
+                    />
+                    <div class="card-tag card-tag-bottom card-tag-primary">
+                      愛甜食
                     </div>
-                    <div class="card-body">
+                  </div>
+                  <div class="card-body">
                     <h3 class="card-title t3">正在找人吃提拉米蘇</h3>
                     <div class="d-flex align-items-center">
-                        <p class="text-t500 me-auto t2">
-                        Emily / 26
-                        </p>
-                        <div class="card-icon-text gap-0 text-n500">
-                        <a href="#" class="d-flex align-items-center"><span class="material-symbols--location-on-outline-rounded box-12px"></span></a>
+                      <p class="text-t500 me-auto t2">Emily / 26</p>
+                      <div class="card-icon-text gap-0 text-n500">
+                        <a href="#" class="d-flex align-items-center"
+                          ><span
+                            class="material-symbols--location-on-outline-rounded box-12px"
+                          ></span
+                        ></a>
                         <p>1km</p>
-                        </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </article>
-        
+              </article>
             </div>
-            </section>
-        
+          </section>
         </main>
 
         <%- include('./layout/footer-phone'); -%>
+      </div>
     </div>
-</div>
-
-
-
-
-
 
     <script type="module" src="../main.js"></script>
   </body>
