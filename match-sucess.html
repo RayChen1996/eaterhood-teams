@@ -68,13 +68,29 @@
                   <a href="#" class="dot"></a>
                 </div>
               </div>
-                
+              
             </div>
           </div>
         </section>
         <div class="container">
-          <input class="form-control rounded-pill bg-white t2" type="text" placeholder="傳送訊息...." aria-label="default input example">
+          <input id="msgInput" class="form-control rounded-pill bg-white t2" type="text" placeholder="傳送訊息...." aria-label="default input example">
         </div>
+        <!-- 訊息連結到ai-chat -->
+        <script>
+          const input = document.getElementById('msgInput');
+
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {   // 偵測 Enter
+              e.preventDefault();      // 避免表單預設行為
+              const msg = input.value.trim();
+              if (msg) {
+                // 跳轉到 ai-chat.html 並帶上輸入的訊息
+                window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
+              }
+            }
+          });
+        </script>
+        
         <!-- 愛心動畫 -->
         <div>
           <span class="material-symbols-outlined text-white heart">favorite</span>
