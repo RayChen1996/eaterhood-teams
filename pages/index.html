@@ -341,9 +341,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -392,9 +396,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -443,9 +451,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -494,9 +506,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -545,9 +561,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -596,9 +616,13 @@
                       4/6人
                     </div>
                     <div class="card-tag card-tag-top">
-                      <a href="#"
+                      <a href="#" class="bookmark-group"
                         ><img
-                          class="bookmark-btn"
+                          class="bookmark-active"
+                          style="display: none"
+                          src="../assets/images/icon/bookmark_active.svg"
+                          alt="bookmark_active.svg" /><img
+                          class="bookmark-default"
                           src="../assets/images/icon/bookmark_default.svg"
                           alt="bookmark_default.svg"
                       /></a>
@@ -641,6 +665,24 @@
         <%- include('./layout/footer-phone'); -%>
       </div>
     </div>
+
+    <script>
+      let bookmarkGroup = document.querySelectorAll(".bookmark-group");
+      console.log(bookmarkGroup);
+      bookmarkGroup.forEach((bookmark) => {
+        let bookmarkDefault = bookmark.querySelector(".bookmark-default");
+        let bookmarkActive = bookmark.querySelector(".bookmark-active");
+        bookmark.addEventListener("click", () => {
+          if (bookmarkActive.style.display === "none") {
+            bookmarkActive.style.display = "block";
+            bookmarkDefault.style.display = "none";
+          } else {
+            bookmarkActive.style.display = "none";
+            bookmarkDefault.style.display = "block";
+          }
+        });
+      });
+    </script>
 
     <script type="module" src="../main.js"></script>
   </body>

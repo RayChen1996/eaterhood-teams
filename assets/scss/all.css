@@ -16325,8 +16325,8 @@ footer .bi {
   text-align: center;
 }
 .Ewanbar-aside-text {
-  background: #FCDEAC;
-  color: #6B4C3B;
+  background: #fcdeac;
+  color: #6b4c3b;
   border-radius: 24px;
   padding: 8px 0;
 }
@@ -16372,14 +16372,14 @@ footer .bi {
   top: 8px;
 }
 .card-tag-primary {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #866348;
   padding: 4px 8px;
   border-radius: 24px;
 }
 .card-tag-secondary {
   color: #363533;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 4px 8px;
   border-radius: 24px;
 }
@@ -16394,7 +16394,7 @@ footer .bi {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background: #EF4444;
+  background: #ef4444;
 }
 
 .main-mb {
@@ -16432,8 +16432,8 @@ footer .bi {
   text-align: center;
 }
 .Ewanbar-aside-text {
-  background: #FCDEAC;
-  color: #6B4C3B;
+  background: #fcdeac;
+  color: #6b4c3b;
   border-radius: 24px;
   padding: 8px 0;
 }
@@ -16479,14 +16479,14 @@ footer .bi {
   top: 8px;
 }
 .card-tag-primary {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #866348;
   padding: 4px 8px;
   border-radius: 24px;
 }
 .card-tag-secondary {
   color: #363533;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 4px 8px;
   border-radius: 24px;
 }
@@ -16501,7 +16501,7 @@ footer .bi {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background: #EF4444;
+  background: #ef4444;
 }
 
 .main-mb {
@@ -16752,7 +16752,8 @@ footer .bi {
 .feedback-default,
 .feedback-active,
 .bookmark-btn,
-.img-size {
+.img-size,
+.bookmark-default {
   width: 24px;
   aspect-ratio: 1/1;
   vertical-align: middle;
