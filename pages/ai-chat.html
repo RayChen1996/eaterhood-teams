@@ -286,6 +286,7 @@
         overlayDisabled();
         // EwanDisabled();
         aiInput.value = text;
+        document.getElementById("submitBtn").style.opacity = 1;
       };
 
       // 透明黑框的開啟與關閉
@@ -313,6 +314,7 @@
         p.classList.add("chat");
         p.classList.add("chat-primary");
         p.classList.add("chat-mb-sm");
+        submitBtnHidden();
         p.textContent = aiInput.value;
         textBar.appendChild(p);
         aiInput.value = "";
@@ -342,6 +344,10 @@
           //     EwanDisabled();
           // }
         }
+      });
+
+      submitBtn.addEventListener("click", () => {
+        showText();
       });
     </script>
 

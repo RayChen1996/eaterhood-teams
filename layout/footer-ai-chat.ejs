@@ -9,7 +9,7 @@
       <div class="footer-ai-input w-100 d-flex">
         <input
           id="aiInput"
-          type="text ai-input"
+          type="text"
           class="t2 p-0 col"
           placeholder="傳送訊息...."
         />
@@ -18,7 +18,7 @@
           class="img-size"
           src="../assets/images/icon/camera.svg"
           alt="camera.svg"
-          style="display: none"
+          style="opacity: 0"
         />
       </div>
     </div>
@@ -31,7 +31,20 @@
 <script>
   let submitBtn = document.getElementById("submitBtn");
 
-  let show = () => {
-    submitBtn.style.display = "block";
-  };
+  function submitBtnToggle() {
+    if (document.getElementById("aiInput").value !== "") {
+      submitBtn.style.opacity = 1;
+    } else {
+      submitBtn.style.opacity = 0;
+    }
+  }
+  function submitBtnShow() {
+    submitBtn.style.opacity = 1;
+  }
+
+  function submitBtnHidden() {
+    submitBtn.style.opacity = 0;
+  }
+
+  aiInput.addEventListener("input", submitBtnToggle);
 </script>
