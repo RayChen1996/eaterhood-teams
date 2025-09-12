@@ -16104,7 +16104,7 @@ a {
   background: #fef5e2;
 }
 .header-bar-mt {
-  margin-top: 108px;
+  margin-top: 116px;
 }
 .header-bar-mt-ai {
   margin-top: 116px;
@@ -16765,12 +16765,14 @@ footer .bi {
   bottom: 102px;
   width: 48px;
   height: 48px;
-  background: #FFFFFF;
+  background: #ffffff;
+  outline: 2px solid rgb(232, 231, 229);
+  box-shadow: 2px 2px 7.8px 0px rgba(244, 144, 43, 0.4);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F6A341;
+  color: #f6a341;
   z-index: 1;
 }
 
@@ -16922,12 +16924,14 @@ footer .bi {
   bottom: 102px;
   width: 48px;
   height: 48px;
-  background: #FFFFFF;
+  background: #ffffff;
+  outline: 2px solid rgb(232, 231, 229);
+  box-shadow: 2px 2px 7.8px 0px rgba(244, 144, 43, 0.4);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F6A341;
+  color: #f6a341;
   z-index: 1;
 }
 
