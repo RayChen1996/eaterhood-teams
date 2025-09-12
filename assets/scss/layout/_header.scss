@@ -1,17 +1,20 @@
-.header{
-  background: #69F0AE;
+.header {
+  background: #69f0ae;
   font-size: 64px;
 }
 
-.header-bar{
+.header-bar {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
   border-radius: 44px 44px 0 0;
-  background: #FEF5E2;
-  &-mt{
+  background: #fef5e2;
+  &-mt {
     margin-top: 108px;
+  }
+  &-mt-ai {
+    margin-top: 116px;
   }
 }
