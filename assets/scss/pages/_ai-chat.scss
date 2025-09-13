@@ -56,12 +56,16 @@
   &-index {
     position: absolute;
     z-index: 1;
-    right: 5px;
-    bottom: 102px;
+    right: 16px;
+    bottom: 110px;
     display: none;
     &.active {
       display: block;
     }
+  }
+  &-img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 7.8px 0px rgba(244, 144, 43, 0.4);
   }
 }
 

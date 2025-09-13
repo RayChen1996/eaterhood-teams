@@ -1,20 +1,24 @@
-.aspect-find-friend{
-    aspect-ratio: 163/142;
+.aspect-find-friend {
+  aspect-ratio: 163/142;
 }
 
-.mb-find-friend{
-    margin-bottom: 70px;
+.mb-find-friend {
+  margin-bottom: 70px;
 }
 
-.button-Iwan{
-    background: #6D9651;
-    color: #FFFFFF;
-    border-radius: 16px 16px 4px 16px;
-    padding: 5.5px 12px;
-    &-index{
-        position: absolute;
-        z-index: 1;
-        right: 5px;
-        bottom: 102px;
-    }
+.button-Iwan {
+  background: #6d9651;
+  color: #ffffff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 5.5px 12px;
+  &-index {
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    bottom: 102px;
+  }
+  &-img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 7.8px 0px rgba(244, 144, 43, 0.4);
+  }
 }
