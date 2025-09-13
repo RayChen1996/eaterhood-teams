@@ -12,247 +12,243 @@
   </head>
   <body>
     <div class="phone">
-       <div class="screen">
- <main>
-        <!-- 頂部標題列 -->
-        <div class="container py-2 bg-primary">
-          <div class="d-flex align-items-center justify-content-between">
-            <a href="#" class="me-3 text-dark">
-              <span class="material-icons-outlined"> chevron_left </span>
-            </a>
-            <h6 class="mb-0 fw-bold">個人資料</h6>
-            <a href="#" class="me-3 text-dark">
-              <span class="material-icons-outlined"> edit </span>
-            </a>
-          </div>
-        </div>
-
-        <!-- 上方 Tabs -->
-
-        <ul
-          class="top-tab nav nav-underline mb-4 mb-lg-5 justify-content-around"
-          id="top-tab"
-        >
-          <li class="nav-item friends" role="presentation">
-            <a
-              class="nav-link active fw-bold"
-              id="pills-account-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-account"
-              type="button"
-              role="tab"
-              aria-controls="pills-account"
-              aria-selected="true"
-              aria-current="page"
-              href="#"
-            >
-              <span class="material-icons-outlined"> account_circle </span>
-            </a>
-          </li>
-          <li class="nav-item meeting" role="presentation">
-            <a
-              class="nav-link fw-bold"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-              href="#"
-            >
-              <span class="material-icons-outlined"> calendar_today </span></a
-            >
-          </li>
-
-          <li class="nav-item meeting" role="presentation">
-            <a
-              class="nav-link fw-bold"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h7.175q.4 0 .763.15t.637.425l4.85 4.85q.275.275.425.638t.15.762V20q0 .825-.587 1.413T18 22zm7-14V4H6v16h12V9h-4q-.425 0-.712-.288T13 8M6 4v5zv16z"
-                /></svg
-            ></a>
-          </li>
-        </ul>
-
-        <div class="tab-content pb-88" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-account"
-            role="tabpanel"
-            aria-labelledby="pills-account-tab"
-          >
-            <!-- 個人頭像 -->
-            <div class="container text-center my-3">
-              <img
-                src="../assets/images/個人資料圖片.svg"
-                class="img-fluid rounded-4"
-              />
+      <div class="screen">
+        <main>
+          <div class="header-bar"><%- include('./layout/header'); -%></div>
+          <!-- 頂部標題列 -->
+          <div class="container py-2 bg-primary">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class="me-3 text-dark">
+                <span class="material-icons-outlined"> chevron_left </span>
+              </a>
+              <h6 class="mb-0 fw-bold">個人資料</h6>
+              <a href="#" class="me-3 text-dark">
+                <span class="material-icons-outlined"> edit </span>
+              </a>
             </div>
+          </div>
 
-            <!-- 基本資訊 -->
-            <div class="container mb-4 pb-88">
-              <div class="d-flex align-items-center mb-2">
-                <h5 class="fw-bold mb-0">小雨，25</h5>
-                <i class="bi bi-patch-check-fill text-primary ms-2"></i>
+          <!-- 上方 Tabs -->
+
+          <ul
+            class="top-tab nav nav-underline mb-4 mb-lg-5 justify-content-around"
+            id="top-tab"
+          >
+            <li class="nav-item friends" role="presentation">
+              <a
+                class="nav-link active fw-bold"
+                id="pills-account-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-account"
+                type="button"
+                role="tab"
+                aria-controls="pills-account"
+                aria-selected="true"
+                aria-current="page"
+                href="#"
+              >
+                <span class="material-icons-outlined"> account_circle </span>
+              </a>
+            </li>
+            <li class="nav-item meeting" role="presentation">
+              <a
+                class="nav-link fw-bold"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                href="#"
+              >
+                <span class="material-icons-outlined"> calendar_today </span></a
+              >
+            </li>
+
+            <li class="nav-item meeting" role="presentation">
+              <a
+                class="nav-link fw-bold"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h7.175q.4 0 .763.15t.637.425l4.85 4.85q.275.275.425.638t.15.762V20q0 .825-.587 1.413T18 22zm7-14V4H6v16h12V9h-4q-.425 0-.712-.288T13 8M6 4v5zv16z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+
+          <div class="tab-content pb-88" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-account"
+              role="tabpanel"
+              aria-labelledby="pills-account-tab"
+            >
+              <!-- 個人頭像 -->
+              <div class="container text-center my-3">
+                <img
+                  src="../assets/images/個人資料圖片.svg"
+                  class="img-fluid rounded-4"
+                />
               </div>
-              <button
-                class="btn btn-sm btn-outline-secondary rounded-pill mb-2"
-              >
-                編輯資料
-              </button>
 
-              <div
-                class="d-flex align-items-center justify-content-between border-bottom py-2"
-              >
-                <span>是否公開所在地位置</span>
-                <div class="form-check form-switch m-0">
-                  <input class="form-check-input" type="checkbox" checked />
+              <!-- 基本資訊 -->
+              <div class="container mb-4 pb-88">
+                <div class="d-flex align-items-center mb-2">
+                  <h5 class="fw-bold mb-0">小雨，25</h5>
+                  <i class="bi bi-patch-check-fill text-primary ms-2"></i>
                 </div>
-              </div>
+                <button
+                  class="btn btn-sm btn-outline-secondary rounded-pill mb-2"
+                >
+                  編輯資料
+                </button>
 
-              <div class="py-2">
-                <p class="fw-bold mb-1">基本資料</p>
-                <p class="mb-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom py-2"
+                >
+                  <span>是否公開所在地位置</span>
+                  <div class="form-check form-switch m-0">
+                    <input class="form-check-input" type="checkbox" checked />
+                  </div>
+                </div>
+
+                <div class="py-2">
+                  <p class="fw-bold mb-1">基本資料</p>
+                  <p class="mb-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M4.25 13.25a2.5 2.5 0 0 1 2.5-2.5h10.5a2.5 2.5 0 0 1 2.5 2.5v8H4.25z"
+                        />
+                        <path
+                          d="m4.25 14.87l2.249 1.45a3 3 0 0 0 3.252 0l.623-.4a3 3 0 0 1 3.252 0l.623.4a3 3 0 0 0 3.252 0l2.249-1.45m1.5 6.375H2.75M12 2.75l1.414 1.414a2 2 0 1 1-2.828 0zm0 4.83v3.17"
+                        />
+                      </g></svg
+                    >1998-03-03
+                  </p>
+                  <p class="mb-1">
+                    <img
+                      src="../assets/images/ph--gender-neuter-bold.svg"
+                      width="20"
+                      alt=""
+                    />
+                    女性
+                  </p>
+                  <p class="mb-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
                       <path
-                        d="M4.25 13.25a2.5 2.5 0 0 1 2.5-2.5h10.5a2.5 2.5 0 0 1 2.5 2.5v8H4.25z"
-                      />
+                        fill="currentColor"
+                        d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm0-2h16V8H4zm6-13h4V4h-4zM4 19V8z"
+                      /></svg
+                    >台北市
+                  </p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
                       <path
-                        d="m4.25 14.87l2.249 1.45a3 3 0 0 0 3.252 0l.623-.4a3 3 0 0 1 3.252 0l.623.4a3 3 0 0 0 3.252 0l2.249-1.45m1.5 6.375H2.75M12 2.75l1.414 1.414a2 2 0 1 1-2.828 0zm0 4.83v3.17"
-                      />
-                    </g></svg
-                  >1998-03-03
-                </p>
-                <p class="mb-1">
-                  <img
-                    src="../assets/images/ph--gender-neuter-bold.svg"
-                    width="20"
-                    alt=""
-                  />
-                  女性
-                </p>
-                <p class="mb-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm0-2h16V8H4zm6-13h4V4h-4zM4 19V8z"
-                    /></svg
-                  >台北市
-                </p>
-                <p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35m0 1.975q-.35 0-.7-.125t-.625-.375Q9.05 19.325 7.8 17.9t-2.087-2.762t-1.275-2.575T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 1.125-.437 2.363t-1.275 2.575T16.2 17.9t-2.875 2.925q-.275.25-.625.375t-.7.125M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12"
-                    /></svg
-                  >設計師
-                </p>
-              </div>
+                        fill="currentColor"
+                        d="M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35m0 1.975q-.35 0-.7-.125t-.625-.375Q9.05 19.325 7.8 17.9t-2.087-2.762t-1.275-2.575T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 1.125-.437 2.363t-1.275 2.575T16.2 17.9t-2.875 2.925q-.275.25-.625.375t-.7.125M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12"
+                      /></svg
+                    >設計師
+                  </p>
+                </div>
 
-              <!-- 興趣標籤 -->
-              <div class="py-2">
-                <p class="fw-bold mb-2">飲食偏好</p>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >人生不能沒有手搖</span
-                  >
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >我真的愛吃</span
-                  >
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >辣食控</span
-                  >
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >日式料理超讚</span
-                  >
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >給我蛋白質</span
-                  >
+                <!-- 興趣標籤 -->
+                <div class="py-2">
+                  <p class="fw-bold mb-2">飲食偏好</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >人生不能沒有手搖</span
+                    >
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >我真的愛吃</span
+                    >
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >辣食控</span
+                    >
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >日式料理超讚</span
+                    >
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >給我蛋白質</span
+                    >
 
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >咖啡店探險家</span
-                  >
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >咖啡店探險家</span
+                    >
+                  </div>
+                </div>
+
+                <div class="py-2">
+                  <p class="fw-bold mb-2">飲食偏好</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill bg-p200 text-t400"
+                      >不吃羊肉</span
+                    >
+                  </div>
+                </div>
+
+                <!-- 個人介紹 -->
+                <div class="py-2">
+                  <p class="fw-bold mb-2">個人介紹</p>
+                  <p class="text-muted small">
+                    嗨～我是小雨！我喜歡探索各種美食，特別是甜點。<br />
+                    假日常常會和朋友去咖啡廳，或是去發掘新餐廳。
+                  </p>
                 </div>
               </div>
-
-              <div class="py-2">
-                <p class="fw-bold mb-2">飲食偏好</p>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="badge rounded-pill bg-p200 text-t400"
-                    >不吃羊肉</span
-                  >
-                </div>
-              </div>
-
-              <!-- 個人介紹 -->
-              <div class="py-2">
-                <p class="fw-bold mb-2">個人介紹</p>
-                <p class="text-muted small">
-                  嗨～我是小雨！我喜歡探索各種美食，特別是甜點。<br />
-                  假日常常會和朋友去咖啡廳，或是去發掘新餐廳。
-                </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="container d-flex justify-content-center a">
+                尚未開放
               </div>
             </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-          >
-            <div class="container d-flex justify-content-center a">
-              尚未開放
-            </div>
-          </div>
-        </div>
- 
-      </main>
-          <%- include('./layout/footer-phone'); -%>
-       </div>
+        </main>
+        <%- include('./layout/footer-phone'); -%>
+      </div>
     </div>
-
-     
-    </div>
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>
