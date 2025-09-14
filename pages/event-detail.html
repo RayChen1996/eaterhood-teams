@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>聚會活動詳細頁-報名</title>
+  </head>
+  <body class="text-n500 t1">
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt-ai">
+          <div class="container-fluid">
+            <div class="header-bar">
+              <%- include('./layout/header'); -%>
+
+              <section class="d-flex align-items-center py-2 mx-2 mb-4">
+                <a class="ai-topbar-item" href="index.html"
+                  ><img
+                    src="../assets/images/icon/arrow-left.svg"
+                    alt="arrow-left.svg"
+                /></a>
+
+                <span class="t1b me-auto"></span>
+
+                <a class="ai-topbar-item" href="#">
+                  <img
+                    class="bookmark-btn"
+                    src="../assets/images/icon/collect-btn-navbar.svg"
+                    alt="bookmark_default.svg"
+                  />
+                </a>
+                <a class="ai-topbar-item" href="#">
+                  <img
+                    class="bookmark-btn"
+                    src="../assets/images/icon/collect-btn-navbar.svg"
+                    alt="bookmark_default.svg"
+                  />
+                </a>
+              </section>
+
+              <!-- 活動標題 -->
+              <section class="px-3 mb-3">
+                <h1 class="mb-2 fs-2 text-primary">來一口微醺 再認識你</h1>
+                <div class="d-flex align-items-center">
+                  <img
+                    src="../assets/images/event/報名者-05.svg"
+                    alt="mandy"
+                    class="avatar-sm me-2"
+                  />
+                  <span class="t3">Mandy #20013</span>
+                </div>
+              </section>
+            </div>
+
+            <!-- 主圖 -->
+            <section class="mb-3">
+              <img
+                src="../assets/images/event/貼文照片.svg"
+                alt="activity"
+                class="w-100 rounded-3 mx-auto d-block"
+              />
+            </section>
+
+            <!-- 標籤 -->
+            <section class="px-3 mb-3 d-flex gap-2">
+              <span class="rounded-pill bg-primary py-2 px-3 fs-5"
+                >集點限定</span
+              >
+              <span class="rounded-pill bg-primary py-2 px-3 fs-5"
+                >女性優先</span
+              >
+            </section>
+
+            <!-- 活動基本資訊 -->
+            <section class="px-3 mb-4">
+              <h2 class="t3b mb-2 fs-5">活動基本資訊</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="material-icons me-2">schedule</span>
+                  2025-07-28 19:00
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span class="material-icons me-2">place</span>
+                  台北市, 大安區
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="material-icons me-2">group</span>
+                  6 人
+                </li>
+              </ul>
+            </section>
+
+            <!-- 活動說明 -->
+            <section class="px-3 mb-4">
+              <h2 class="t3b mb-2 fs-5">活動說明</h2>
+              <p class="t3 text-n400">
+                溫馨聚會結合精緻料理與微醺酒品，提供獨特愉快的用餐體驗。參與成員將玩樂、結識多元，從輕鬆對談中創造另一段回憶。
+              </p>
+            </section>
+
+            <!-- 報名截止 -->
+            <section class="px-3 mb-4">
+              <h2 class="mb-2 fs-5">報名截止</h2>
+              <p class="t3 text-n400">2025-07-26 19:00</p>
+            </section>
+
+            <!-- 已報名人員 -->
+            <section class="px-3 mb-5">
+              <h2 class="t3b fs-5 mb-2">報名者</h2>
+              <div class="d-flex align-items-center">
+                <img
+                  src="../assets/images/event/報名者-01.svg"
+                  class="avatar-sm me-1"
+                />
+                <img
+                  src="../assets/images/event/報名者-02.svg"
+                  class="avatar-sm me-1"
+                />
+                <img
+                  src="../assets/images/event/報名者-03.svg"
+                  class="avatar-sm me-1"
+                />
+                <img
+                  src="../assets/images/event/報名者-04.svg"
+                  class="avatar-sm me-1"
+                />
+                <span class="t3 ms-2">+8 人</span>
+              </div>
+            </section>
+            <!-- 底部固定 CTA -->
+            <button class="btn btn-primary w-100 rounded-pill">我要報名</button>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
