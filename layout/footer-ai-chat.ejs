@@ -47,4 +47,14 @@
   }
 
   aiInput.addEventListener("input", submitBtnToggle);
+
+  // 取得網址參數
+  const params = new URLSearchParams(window.location.search);
+  const msg = params.get("msg"); // 讀取 msg=xxx
+
+  if (msg) {
+    // 塞進 input
+    document.getElementById("aiInput").value = msg;
+    submitBtnShow();
+  }
 </script>
