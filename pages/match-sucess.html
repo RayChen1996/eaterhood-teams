@@ -71,23 +71,53 @@
             </div>
           </div>
         </section>
-        <div class="container">
-          <input id="msgInput" class="form-control rounded-pill bg-white t2" type="text" placeholder="傳送訊息...." aria-label="default input example">
-        </div>
+        <!-- 傳送訊息對話框 -->
+        <div class="container position-relative">
+          <input id="msgInput"
+                class="form-control rounded-pill bg-white t2"
+                type="text"
+                placeholder="傳送訊息...."
+                aria-label="default input example">
+                
+          <!-- 傳送圖片 -->
+          <button id="sendBtn" 
+          class="btn position-absolute top-50 end-0 translate-middle-y me-2 p-4 d-none" 
+          style="border:none; background:transparent;">
+            <img src="../assets/images/icon/send-primary.svg" alt="send" style="width:24px; height:24px;">
+          </button>
+        </div>        
         <!-- 訊息連結到ai-chat -->
         <script>
           const input = document.getElementById('msgInput');
+          const sendBtn = document.getElementById('sendBtn');
 
-          input.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {   // 偵測 Enter
-              e.preventDefault();      // 避免表單預設行為
-              const msg = input.value.trim();
-              if (msg) {
-                // 跳轉到 ai-chat.html 並帶上輸入的訊息
-                window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
-              }
+          // 共用傳送函式
+          function sendMessage() {
+            const msg = input.value.trim();
+            if (msg) {
+              window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
+            }
+          }
+
+          // 輸入框監聽：有文字才顯示按鈕
+          input.addEventListener('input', () => {
+            if (input.value.trim() !== "") {
+              sendBtn.classList.remove("d-none");
+            } else {
+              sendBtn.classList.add("d-none");
             }
           });
+
+          // Enter 鍵送出
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              sendMessage();
+            }
+          });
+
+          // 點擊圖片送出
+          sendBtn.addEventListener('click', sendMessage);
         </script>
         
         <!-- 愛心動畫 -->
