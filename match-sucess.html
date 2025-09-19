@@ -72,23 +72,52 @@
             </div>
           </div>
         </section>
-        <div class="container">
-          <input id="msgInput" class="form-control rounded-pill bg-white t2" type="text" placeholder="傳送訊息...." aria-label="default input example">
-        </div>
+        <!-- 傳送訊息對話框 -->
+        <div class="container position-relative">
+          <input id="msgInput"
+                class="form-control rounded-pill bg-white t2"
+                type="text"
+                placeholder="傳送訊息...."
+                aria-label="default input example">
+          <!-- 傳送圖片 -->
+          <button id="sendBtn" 
+          class="btn position-absolute top-50 end-0 translate-middle-y me-2 p-4 d-none" 
+          style="border:none; background:transparent;">
+            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.2562%2011.5168L6.61672%2011.5168M5.56359%204.11278L18.8189%2010.5396C19.6352%2010.9354%2019.6352%2012.0983%2018.8189%2012.494L5.56359%2018.9209C4.65552%2019.3612%203.69032%2018.4329%204.09482%2017.5084L6.52567%2011.9521C6.64707%2011.6746%206.64707%2011.359%206.52567%2011.0815L4.09482%205.5253C3.69032%204.60073%204.65551%203.6725%205.56359%204.11278Z'%20stroke='%23F6A341'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="send" style="width:24px; height:24px;">
+          </button>
+        </div>        
         <!-- 訊息連結到ai-chat -->
         <script>
           const input = document.getElementById('msgInput');
+          const sendBtn = document.getElementById('sendBtn');
 
-          input.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {   // 偵測 Enter
-              e.preventDefault();      // 避免表單預設行為
-              const msg = input.value.trim();
-              if (msg) {
-                // 跳轉到 ai-chat.html 並帶上輸入的訊息
-                window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
-              }
+          // 共用傳送函式
+          function sendMessage() {
+            const msg = input.value.trim();
+            if (msg) {
+              window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
+            }
+          }
+
+          // 輸入框監聽：有文字才顯示按鈕
+          input.addEventListener('input', () => {
+            if (input.value.trim() !== "") {
+              sendBtn.classList.remove("d-none");
+            } else {
+              sendBtn.classList.add("d-none");
             }
           });
+
+          // Enter 鍵送出
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              sendMessage();
+            }
+          });
+
+          // 點擊圖片送出
+          sendBtn.addEventListener('click', sendMessage);
         </script>
         
         <!-- 愛心動畫 -->
