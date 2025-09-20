@@ -109,6 +109,7 @@
               <h6 class="fw-bold mb-3">最近對話</h6>
               <ul class="list-group">
                 <li
+                  onclick="link(this,'ai-chat.html')"
                   class="list-group-item border-0 d-flex justify-content-between align-items-start"
                 >
                   <div class="d-flex">
@@ -126,7 +127,11 @@
                     <span class="badge bg-warning text-dark">輸給了</span>
                   </div>
                 </li>
-
+                <script>
+                  let link = (el, web) => {
+                    window.location.href = web;
+                  };
+                </script>
                 <li
                   class="list-group-item border-0 d-flex justify-content-between align-items-start"
                 >
