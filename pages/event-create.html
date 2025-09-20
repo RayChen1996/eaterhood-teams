@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>發起聚會活動</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt">
+          <div class="header-bar">
+            <%- include('./layout/header'); -%>
+            <section class="px-2 my-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html" class="d-flex align-items-center p-2">
+                  <span class="material-icons">arrow_back</span>
+                </a>
+                <h1 class="t1b mb-0" style="font-size: 1.1rem">發起聚會活動</h1>
+                <span style="width: 32px"></span>
+              </div>
+            </section>
+          </div>
+          <div class="container">
+            <!-- 活動基本資訊 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">event_note</span>活動基本資訊
+              </div>
+              <div
+                class="form-item d-flex justify-content-between align-items-center mb-2"
+              >
+                <label>時間</label>
+                <input type="text" placeholder="請選擇時間" />
+                <span class="material-icons" style="color: #ccc"
+                  >chevron_right</span
+                >
+              </div>
+              <div
+                class="form-item d-flex justify-content-between align-items-center mb-2"
+              >
+                <label>地點</label>
+                <input type="text" placeholder="請填寫地點" />
+                <span class="material-icons" style="color: #ccc"
+                  >chevron_right</span
+                >
+              </div>
+              <div
+                class="form-item d-flex justify-content-between align-items-center"
+              >
+                <label>人數</label>
+                <input type="number" placeholder="輸入人數" />
+              </div>
+            </section>
+
+            <!-- 地點描述 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">location_on</span>地點描述
+              </div>
+              <textarea
+                rows="2"
+                placeholder="例：台北大安區…"
+                style="width: 100%; border: none; background: transparent"
+              ></textarea>
+            </section>
+
+            <!-- 活動說明 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">description</span>活動說明
+              </div>
+              <textarea
+                rows="3"
+                placeholder="說明一下活動的流程以及主要事項"
+                style="width: 100%; border: none; background: transparent"
+              ></textarea>
+            </section>
+
+            <!-- 活動標籤 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">sell</span>活動標籤
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="tag">興趣交流</button>
+                <button class="tag">體驗美食</button>
+                <button class="tag">女性優先</button>
+                <button class="tag">桌遊派對</button>
+                <button class="tag">運動健身</button>
+                <!-- 其他標籤... -->
+              </div>
+            </section>
+
+            <!-- 活動照片 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">photo_camera</span>活動照片
+              </div>
+              <div class="photo-grid">
+                <div class="photo-upload">+</div>
+                <div class="photo-upload">+</div>
+                <div class="photo-upload">+</div>
+                <div class="photo-upload">+</div>
+                <div class="photo-upload">+</div>
+                <div class="photo-upload">+</div>
+              </div>
+            </section>
+
+            <!-- 報名截止 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">schedule</span>報名截止
+              </div>
+              <div
+                class="form-item d-flex justify-content-between align-items-center mb-2"
+              >
+                <label>日期</label>
+                <input type="date" />
+              </div>
+              <div
+                class="form-item d-flex justify-content-between align-items-center"
+              >
+                <label>時間</label>
+                <input type="time" />
+              </div>
+            </section>
+
+            <!-- 發起人資訊 -->
+            <section class="card px-3 py-3 mb-3">
+              <div class="section-title">
+                <span class="material-icons">person</span>發起人資訊
+              </div>
+              <div class="form-item mb-2">
+                <label>身份</label>
+                <input type="text" placeholder="輸入身份" />
+              </div>
+              <div class="form-item">
+                <label>詳細地址</label>
+                <input type="text" placeholder="輸入詳細地址" />
+              </div>
+            </section>
+            <button class="btn btn-primary w-100 rounded-pill">發佈</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

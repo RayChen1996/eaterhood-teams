@@ -26,33 +26,24 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./layout/footer-new.scss";
+ 
 
 @import './layout/header-p300';
 
 @import './layout/footer-ai-chat';
 
-
 // 手機匡 footer
 @import "./layout/footer-phone";
 
-@import "./pages/index.scss";
-
 @import './pages/index.scss';
-
 @import './pages/draw-friend';
 @import './pages/today-friend';
 @import './pages/ai-chat';
+@import "./pages/events";
+@import "./pages/find-friend";
+@import "./pages/match-sucess";
 
-
-@import './pages/events';
-@import './pages/find-friend';
-
-
-@import './pages/match-sucess'; 
-
-
-@import "./pages/events"; 
 @import "./pages/chat_list";
-
-
+@import "./pages/event-create";
 @import "./pages/foodie-zone";
+ 
