@@ -11,7 +11,7 @@
   
   <body>
     <div class="phone">
-      <div class="screen">
+      <div class="screen-p300">
         
         <main class="match-main">
           <%- include('./layout/header-p300'); -%>
@@ -31,7 +31,7 @@
           <div class="d-flex justify-content-center pt-4 mb-4">
             <div class="position-relative">
               <div class="position-top-right-4">
-                <span class="badge rounded-pill text-bg-t400 t3">咖啡成癮</span>
+                <span class="badge rounded-pill text-bg-t400 t3 px-2 py-1">咖啡成癮</span>
               </div>
               <img src="../assets/images/match/match-friend.svg" alt="today-firend" class="d-block rounded-3">
               <img src="../assets/images/match/wave-lightcolor.svg" alt="overlay" class="rounded-3 position-absolute bottom-0">
@@ -39,22 +39,22 @@
               <div class="position-absolute bottom-0 ps-4 mb-3">
                 <div class="d-flex mb-1">
                       <h1 class="h4 text-t500 me-2">Ken 28</h1>
-                      <img src="../assets/images/icon/approve.svg" alt="approve"> 
+                      <img src="../assets/images/icon/approve.svg" alt="approve" style="width: 24px; height: 24px;"> 
                     </div>
                 <div class="d-flex mb-3 align-items-center">
-                  <span class="material-symbols-outlined me-1">location_on</span>
-                  <p class="t2 me-1">台北市信義區
+                  <span class="material-symbols-outlined me-1 fs-5">location_on</span>
+                  <p class="t2 me-1 text-n500">台北市信義區
                     <span class="me-1">距離0.8km</span>
                   </p>                  
                 </div>
                 <p class="t3 mb-1 text-n300">你們的共同標籤</p>            
                 <div class="d-flex flex-wrap mb-2">
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">人生不能沒有手搖</span>
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">我真的愛吃</span>
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">辣食控</span>
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">日式料理超讚</span>
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">給我蛋白質</span>
-                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2">咖啡店探險家</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">人生不能沒有手搖</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">我真的愛吃</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">辣食控</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">日式料理超讚</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">給我蛋白質</span>
+                    <span class="badge rounded-pill text-bg-p200 border border-p300 t3 text-t400 me-2 mb-2 px-2 py-1">咖啡店探險家</span>
                   </div>
               </div>
               <!-- 輪播按鈕 -->
@@ -71,23 +71,53 @@
             </div>
           </div>
         </section>
-        <div class="container">
-          <input id="msgInput" class="form-control rounded-pill bg-white t2" type="text" placeholder="傳送訊息...." aria-label="default input example">
-        </div>
+        <!-- 傳送訊息對話框 -->
+        <div class="container position-relative">
+          <input id="msgInput"
+                class="form-control rounded-pill bg-white t2"
+                type="text"
+                placeholder="傳送訊息...."
+                aria-label="default input example">
+                
+          <!-- 傳送圖片 -->
+          <button id="sendBtn" 
+          class="btn position-absolute top-50 end-0 translate-middle-y me-2 p-4 d-none" 
+          style="border:none; background:transparent;">
+            <img src="../assets/images/icon/send-primary.svg" alt="send" style="width:24px; height:24px;">
+          </button>
+        </div>        
         <!-- 訊息連結到ai-chat -->
         <script>
           const input = document.getElementById('msgInput');
+          const sendBtn = document.getElementById('sendBtn');
 
-          input.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {   // 偵測 Enter
-              e.preventDefault();      // 避免表單預設行為
-              const msg = input.value.trim();
-              if (msg) {
-                // 跳轉到 ai-chat.html 並帶上輸入的訊息
-                window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
-              }
+          // 共用傳送函式
+          function sendMessage() {
+            const msg = input.value.trim();
+            if (msg) {
+              window.location.href = `ai-chat.html?msg=${encodeURIComponent(msg)}`;
+            }
+          }
+
+          // 輸入框監聽：有文字才顯示按鈕
+          input.addEventListener('input', () => {
+            if (input.value.trim() !== "") {
+              sendBtn.classList.remove("d-none");
+            } else {
+              sendBtn.classList.add("d-none");
             }
           });
+
+          // Enter 鍵送出
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+              e.preventDefault();
+              sendMessage();
+            }
+          });
+
+          // 點擊圖片送出
+          sendBtn.addEventListener('click', sendMessage);
         </script>
         
         <!-- 愛心動畫 -->
