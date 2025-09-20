@@ -1,5 +1,8 @@
 body {
-  font-family: "SF Pro", -apple-system, sans-serif;
+  font-family:
+    /* 英文字體優先 */ "SF Pro", "Segoe UI", Inter, Roboto,
+    /* 中文 fallback */ "PingFang TC", "Microsoft JhengHei", "Microsoft YaHei",
+    "Noto Sans CJK", /* 通用備援 */ Helvetica, Arial, sans-serif;
 }
 
 a {
