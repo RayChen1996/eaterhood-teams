@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>聚會活動詳細頁-報名</title>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt">
+          <!-- 找飯友 -->
+
+          <section class="header-bar">
+            <%- include('./layout/header'); -%>
+            <section class="d-flex align-items-center py-2 mx-2 mb-4">
+              <a class="ai-topbar-item" href="index.html"
+                ><img
+                  src="../assets/images/icon/arrow-left.svg"
+                  alt="arrow-left.svg"
+              /></a>
+
+              <span class="t1b me-auto"></span>
+
+              <a class="ai-topbar-item" href="#">
+                <img
+                  class="bookmark-btn"
+                  src="../assets/images/icon/collect-btn-navbar.svg"
+                  alt="bookmark_default.svg"
+                />
+              </a>
+              <a class="ai-topbar-item" href="#">
+                <span class="material-symbols-outlined">ios_share</span>
+              </a>
+            </section>
+          </section>
+
+          <!-- 文章標題 & 作者資訊 -->
+          <div class="container">
+            <div class="mb-3">
+              <h5 class="fw-bold">隱藏版甜點天堂！肉桂捲令人懷念</h5>
+              <div class="d-flex align-items-center text-muted small mt-2">
+                <img
+                  src="../assets/images/聊天頭貼.svg"
+                  alt="作者頭像"
+                  class="rounded-circle me-2"
+                />
+                <span class="me-2">Ken</span>
+                <span>約 00:13</span>
+              </div>
+            </div>
+
+            <!-- 貼文圖片 -->
+            <div class="mb-3">
+              <img
+                src="../assets/images/foodie-detail/貼文照片.svg"
+                alt="肉桂捲"
+                class="img-fluid rounded-3 w-100"
+              />
+            </div>
+
+            <!-- 店家資訊 -->
+            <div class="mb-3">
+              <p class="mb-1 fw-bold">
+                店家名稱 檸檬日常
+                <span class="material-symbols-outlined align-middle ms-1"
+                  >location_on</span
+                >
+                中山區
+              </p>
+              <div class="d-flex align-items-center">
+                <span class="me-2">推薦指數</span>
+                <!-- 星星評分 -->
+                <span class="text-warning material-symbols-outlined">star</span>
+                <span class="text-warning material-symbols-outlined">star</span>
+                <span class="text-warning material-symbols-outlined">star</span>
+                <span class="text-warning material-symbols-outlined">star</span>
+                <span class="text-muted material-symbols-outlined">star</span>
+              </div>
+            </div>
+
+            <!-- 文章內容 -->
+            <div class="mb-4">
+              <p>
+                不是開玩笑，這家的肉桂捲一打開就香到讓人忘記煩惱。
+                <br />
+                肉桂＋焦糖＋奶油的融合真的太犯規，<br />
+                溫熱的時候外酥內軟，還有一點點牽絲～吃完真的<br />
+                會想直接再買一顆回家！<br />
+                適合搭配一杯黑咖啡或熱牛奶，<br />是那種吃了會笑出來的甜點，<br />讓人瞬間進入冬季戀愛感🧣☕️
+              </p>
+            </div>
+
+            <!-- 互動數據區塊 -->
+            <section
+              class="d-flex align-items-center justify-content-between border-top pt-3 pb-2 mb-3"
+            >
+              <!-- emoji + 數字 -->
+              <div class="d-flex align-items-center">
+                <span class="me-2">😋</span>
+                <span class="me-3">1656</span>
+                <span class="me-2">😍</span>
+                <span class="me-3">123</span>
+              </div>
+
+              <!-- 收藏 + 留言 icon -->
+              <div class="d-flex align-items-center">
+                <a href="#" class="text-dark d-flex align-items-center me-3">
+                  <span class="material-symbols-outlined me-1">favorite</span>
+                  <span>1656</span>
+                </a>
+                <a href="#" class="text-dark d-flex align-items-center">
+                  <span class="material-symbols-outlined me-1"
+                    >chat_bubble</span
+                  >
+                  <span>123</span>
+                </a>
+              </div>
+            </section>
+
+            <!-- 留言區 -->
+            <div class="mb-4">
+              <!-- 標籤列 -->
+              <div class="d-flex align-items-center mb-3 border-bottom pb-2">
+                <span class="me-3 fw-bold">全部留言</span>
+                <button class="btn btn-sm btn-outline-secondary me-2">
+                  最新留言
+                </button>
+                <button class="btn btn-sm btn-outline-secondary">熱門</button>
+              </div>
+
+              <!-- 單則留言 -->
+              <div class="d-flex align-items-start mb-3">
+                <img
+                  src="../assets/images/foodie-detail/留言-01.svg"
+                  alt="頭像"
+                  class="rounded-circle me-2"
+                />
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold small">米米</span>
+                    <a href="#" class="text-muted small">
+                      <span class="material-symbols-outlined align-middle"
+                        >favorite</span
+                      >
+                    </a>
+                  </div>
+                  <p class="mb-1 small text-muted">
+                    上次路過這間甜點店被吸進來，下一次也想吃看看耶，有沒有其他人想一起？
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <img
+                  src="../assets/images/foodie-detail/留言-02.svg"
+                  alt="頭像"
+                  class="rounded-circle me-2"
+                />
+                <div class="flex-grow-1">
+                  <div class="d-flex justify-content-between">
+                    <span class="fw-bold small">吉祥寺的松餅</span>
+                    <a href="#" class="text-muted small">
+                      <span class="material-symbols-outlined align-middle"
+                        >favorite</span
+                      >
+                    </a>
+                  </div>
+                  <p class="mb-1 small text-muted">好想推薦給朋友～</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-ai rounded-top-3">
+          <div class="footer-ai-container">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                class="img-size"
+                src="../assets/images/icon/ai button_Iwan.svg"
+                alt="camera.svg"
+              />
+              <div class="w-100 d-flex align-items-center">
+                <input
+                  id="aiInput"
+                  type="text"
+                  class="t2 col bg-transparent border-0"
+                  placeholder="留言....."
+                />
+                <img
+                  id="submitBtn"
+                  class="img-size"
+                  src="../assets/images/icon/feedback_default.svg"
+                  alt="favite.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="light-bar-container">
+            <div class="light-bar"></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
