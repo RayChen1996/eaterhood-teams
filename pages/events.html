@@ -41,7 +41,7 @@
           <section class="container-fluid">
             <div class="row row-cols-2 g-4">
               <!-- 4 -->
-              <article>
+              <article onclick="link(this)">
                 <div class="card t3">
                   <div class="position-relative">
                     <img
@@ -95,6 +95,11 @@
                   </div>
                 </div>
               </article>
+              <script>
+                let link = (el) => {
+                  window.location.href = "event-detail.html";
+                };
+              </script>
               <!-- 5 -->
               <article>
                 <div class="card t3">
