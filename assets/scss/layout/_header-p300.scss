@@ -1,3 +1,15 @@
-.header-p300{
+.header-bar-p300 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 44px 44px 0 0;
     background: #FAC677;
+    &-mt {
+        margin-top: 116px;
+    }
+    &-mt-ai {
+        margin-top: 116px;
+    }
 }

@@ -9,36 +9,40 @@
     <title>抽飯友</title>
   </head>
   <body>
-    <main>
-      <div class="phone">
-        <div class="screen">
+    <div class="phone">
+      <div class="screen">
+        <main class="main main-mb header-bar-mt">
+        <div class="header-bar">
           <%- include('./layout/header'); -%>
           <!-- 導覽列 -->
-            <Section class="container">
-              <div class="d-flex justify-content-between py-2">
-                <a href="find-friend.html"><span class="material-symbols-outlined text-n500 py-2">keyboard_arrow_left</span></a>
-                <p class="t1b text-n500 py-2"></p>
-                <a href="#"></a>
-                </div>
-            </section>
-
-          <div class="py-draw text-center">
-            <div class="mb-4">
-              <img src="/assets/images/(SVG_motion)魔法_Iwan.svg" alt="魔法Iwan">
-            </div>
-            <div class="mb-5">
-              <h1 class="t1b text-t500 mb-2">讓I丸幫你抽一位飯友吧！</h1>
-              <p class="t2 text-n300">每日24小時內隨機抽一位</p>
-            </div>
-            <div>
-            <a href="today-friend.html" class="btn btn-primary btn-draw">抽飯友</a>
-            </div>
-          </div>
-            <%- include('./layout/footer-phone'); -%>
+          <Section class="px-2 my-2">
+            <div class="d-flex justify-content-between">
+              <a href="find-friend.html" class="d-flex align-items-center p-2">
+                <span class="material-symbols-outlined">keyboard_arrow_left</span></a>
+              <p></p>
+              <a href="#"></a>
+              </div>
+          </section>
         </div>
+        
+        <div class="py-draw text-center">
+          <div class="mb-4">
+            <img src="/assets/images/(SVG_motion)魔法_Iwan.svg" alt="魔法Iwan">
+          </div>
+          <div class="mb-5">
+            <h1 class="t1b text-t500 mb-2">讓I丸幫你抽一位飯友吧！</h1>
+            <p class="t2 text-n300">每日24小時內隨機抽一位</p>
+          </div>
+          <div>
+          <a href="today-friend.html" class="btn btn-primary btn-draw">抽飯友</a>
+          </div>
+        </div>
+          <%- include('./layout/footer-phone'); -%>
+          </main>
       </div>
+    </div>
       
-    </main>
+    
 
 
 

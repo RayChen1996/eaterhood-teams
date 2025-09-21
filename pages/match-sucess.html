@@ -12,17 +12,21 @@
   <body>
     <div class="phone">
       <div class="screen-p300">
+        <div class="header-bar-p300-mt">
+          <div class="header-bar-p300">
+            <%- include('./layout/header-p300'); -%>
+            <Section class="px-2 my-2">
+              <div class="d-flex justify-content-between">
+                <a href="today-friend.html" class="d-flex align-items-center p-2">
+                  <span class="material-symbols-outlined">close</span></a>
+                <p></p>
+                <a href="#"></a>
+                </div>
+            </section>
+          </div>
+        </div>
         
         <main class="match-main">
-          <%- include('./layout/header-p300'); -%>
-          <!-- 導覽列 -->
-        <Section class="container">
-          <div class="d-flex justify-content-between py-2">
-            <a href="today-friend.html"><span class="material-symbols-outlined">close</span></a>
-            <p class="t1b text-n500 py-2"></p>
-            <a href="#"></a>
-            </div>
-        </section>
         <section class="text-center mb-4">
           <h1 class="h1 text-white mb-1">配對成功！</h1>
           <h2 class="t1b text-t500">快來跟對方聊聊吧~</h2>
