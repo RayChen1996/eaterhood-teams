@@ -13,44 +13,64 @@
   <body>
     <div class="phone">
       <div class="screen">
-        <!-- Tabs -->
-        <ul
-          class="top-tab nav nav-underline mb-4 mb-lg-5 justify-content-around"
-          id="top-tab"
-        >
-          <li class="nav-item friends" role="presentation">
-            <a
-              class="nav-link active fw-bold"
-              id="pills-account-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-account"
-              type="button"
-              role="tab"
-              aria-controls="pills-account"
-              aria-selected="true"
-              aria-current="page"
-              href="#"
-            >
-              好友</a
-            >
-          </li>
-          <li class="nav-item meeting" role="presentation">
-            <a
-              class="nav-link fw-bold"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-              href="#"
-              >聚會</a
-            >
-          </li>
-        </ul>
+        <div class="header-bar">
+          <%- include('./layout/header'); -%>
+          <section class="px-2 my-2">
+            <div class="d-flex justify-content-between">
+              <a href="find-friend.html" class="d-flex align-items-center p-2"
+                ><span class="material-symbols--keyboard-arrow-left"></span
+              ></a>
+              <a href="#" class="d-flex align-items-center"
+                ><h1 class="t1b">聊天</h1></a
+              >
+              <a href="#" class="d-flex align-items-center p-2"
+                ><span class="material-symbols--search-rounded"></span
+              ></a>
+            </div>
+          </section>
+          <!-- Tabs -->
+          <ul
+            class="top-tab nav nav-underline justify-content-around"
+            id="top-tab"
+          >
+            <li class="nav-item friends" role="presentation">
+              <a
+                class="nav-link active fw-bold"
+                id="pills-account-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-account"
+                type="button"
+                role="tab"
+                aria-controls="pills-account"
+                aria-selected="true"
+                aria-current="page"
+                href="#"
+              >
+                好友</a
+              >
+            </li>
+            <li class="nav-item meeting" role="presentation">
+              <a
+                class="nav-link fw-bold"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                href="#"
+                >聚會</a
+              >
+            </li>
+          </ul>
+        </div>
 
-        <div class="tab-content pb-88" id="pills-tabContent">
+        <div
+          class="tab-content pb-88"
+          id="pills-tabContent"
+          style="margin-top: 164px"
+        >
           <div
             class="tab-pane fade show active"
             id="pills-account"
