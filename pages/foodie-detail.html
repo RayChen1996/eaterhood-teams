@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <title>吃貨專區-內頁</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <div class="phone">
@@ -111,18 +112,18 @@
               <div class="d-flex align-items-center">
                 <span class="me-2">
                   <img
-                    class="bookmark-btn"
-                    src="../assets/images/icon/ai button_Ewan.svg"
-                    alt="bookmark_default.svg"
+                    src="../assets/images/icon/Metrics.svg"
+                    alt="Metrics.svg"
                   />
                 </span>
-                <span class="me-2"
-                  ><img
-                    class="bookmark-btn"
-                    src="../assets/images/icon/ai button_Iwan.svg"
-                    alt="bookmark_default.svg"
-                /></span>
+
                 <span class="me-3">1565</span>
+                <span class="me-2">
+                  <img
+                    src="../assets/images/icon/Messages.svg"
+                    alt="Messages.svg"
+                  />
+                </span>
 
                 <span class="me-3">123</span>
               </div>
@@ -153,11 +154,26 @@
                       <span class="small">今天09:30</span>
                     </div>
 
-                    <a href="#" class="text-muted small">
+                    <!-- <a href="#" class="text-muted small">
                       <span class="material-symbols-outlined align-middle"
                         >favorite</span
                       >
-                    </a>
+                    </a> -->
+                    <div
+                      class="feedback-group chat-mb-lg d-flex align-items-center gap-1"
+                    >
+                      <img
+                        class="feedback-active"
+                        src="../assets/images/icon/feedback_active.svg"
+                        alt="feedback_active.svg"
+                      />
+                      <img
+                        class="feedback-default"
+                        src="../assets/images/icon/feedback_default.svg"
+                        alt="feedback_default.svg"
+                        style="display: none"
+                      />
+                    </div>
                   </div>
                   <p class="mb-1 small text-muted">
                     上次路過這間甜點店被吸進來，下一次也想吃看看耶，有沒有其他人想一起？
@@ -178,11 +194,21 @@
                       <span class="small"> 今天09:25 </span>
                     </div>
 
-                    <a href="#" class="text-muted small">
-                      <span class="material-symbols-outlined align-middle"
-                        >favorite</span
-                      >
-                    </a>
+                    <div
+                      class="feedback-group chat-mb-lg d-flex align-items-center gap-1"
+                    >
+                      <img
+                        class="feedback-active"
+                        src="../assets/images/icon/feedback_active.svg"
+                        alt="feedback_active.svg"
+                        style="display: none"
+                      />
+                      <img
+                        class="feedback-default"
+                        src="../assets/images/icon/feedback_default.svg"
+                        alt="feedback_default.svg"
+                      />
+                    </div>
                   </div>
                   <p class="mb-1 small text-muted">好想推薦給朋友～</p>
                 </div>
@@ -196,8 +222,8 @@
             <div class="d-flex align-items-center gap-2">
               <img
                 class="img-size"
-                src="../assets/images/icon/ai button_Iwan.svg"
-                alt="camera.svg"
+                src="../assets/images/icon/Head sticker.svg"
+                alt="sticker.svg"
               />
               <div class="w-100 d-flex align-items-center">
                 <input
@@ -223,5 +249,13 @@
     </div>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      $(function () {
+        $(".feedback-group").on("click", function () {
+          $(this).find(".feedback-active").toggle();
+          $(this).find(".feedback-default").toggle();
+        });
+      });
+    </script>
   </body>
 </html>
