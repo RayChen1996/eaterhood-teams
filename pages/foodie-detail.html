@@ -55,8 +55,10 @@
                   alt="作者頭像"
                   class="rounded-circle me-2"
                 />
-                <span class="me-2">Ken</span>
-                <span>約 00:13</span>
+                <div class="d-flex flex-column">
+                  <span class="me-2">Ken</span>
+                  <span>昨天00:13</span>
+                </div>
               </div>
             </div>
 
@@ -72,7 +74,7 @@
             <!-- 店家資訊 -->
             <div class="mb-3">
               <p class="mb-1 fw-bold">
-                店家名稱 檸檬日常
+                店家名稱 捲捲日常
                 <span class="material-symbols-outlined align-middle ms-1"
                   >location_on</span
                 >
@@ -107,33 +109,31 @@
             >
               <!-- emoji + 數字 -->
               <div class="d-flex align-items-center">
-                <span class="me-2">😋</span>
-                <span class="me-3">1656</span>
-                <span class="me-2">😍</span>
-                <span class="me-3">123</span>
-              </div>
+                <span class="me-2">
+                  <img
+                    class="bookmark-btn"
+                    src="../assets/images/icon/ai button_Ewan.svg"
+                    alt="bookmark_default.svg"
+                  />
+                </span>
+                <span class="me-2"
+                  ><img
+                    class="bookmark-btn"
+                    src="../assets/images/icon/ai button_Iwan.svg"
+                    alt="bookmark_default.svg"
+                /></span>
+                <span class="me-3">1565</span>
 
-              <!-- 收藏 + 留言 icon -->
-              <div class="d-flex align-items-center">
-                <a href="#" class="text-dark d-flex align-items-center me-3">
-                  <span class="material-symbols-outlined me-1">favorite</span>
-                  <span>1656</span>
-                </a>
-                <a href="#" class="text-dark d-flex align-items-center">
-                  <span class="material-symbols-outlined me-1"
-                    >chat_bubble</span
-                  >
-                  <span>123</span>
-                </a>
+                <span class="me-3">123</span>
               </div>
             </section>
 
             <!-- 留言區 -->
             <div class="mb-4">
+              <h2 class="fs-5 mb-2">全部留言</h2>
               <!-- 標籤列 -->
               <div class="d-flex align-items-center mb-3 border-bottom pb-2">
-                <span class="me-3 fw-bold">全部留言</span>
-                <button class="btn btn-sm btn-outline-secondary me-2">
+                <button class="btn btn-sm btn-outline-secondary border me-2">
                   最新留言
                 </button>
                 <button class="btn btn-sm btn-outline-secondary">熱門</button>
@@ -148,7 +148,11 @@
                 />
                 <div class="flex-grow-1">
                   <div class="d-flex justify-content-between">
-                    <span class="fw-bold small">米米</span>
+                    <div class="d-flex flex-column">
+                      <span class="fw-bold small">米奇</span>
+                      <span class="small">今天09:30</span>
+                    </div>
+
                     <a href="#" class="text-muted small">
                       <span class="material-symbols-outlined align-middle"
                         >favorite</span
@@ -169,7 +173,11 @@
                 />
                 <div class="flex-grow-1">
                   <div class="d-flex justify-content-between">
-                    <span class="fw-bold small">吉祥寺的松餅</span>
+                    <div class="d-flex flex-column">
+                      <span class="fw-bold small">古老神秘的傳說</span>
+                      <span class="small"> 今天09:25 </span>
+                    </div>
+
                     <a href="#" class="text-muted small">
                       <span class="material-symbols-outlined align-middle"
                         >favorite</span

@@ -1,0 +1,75 @@
+.comment-box {
+  background: #fff7ec;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.footer-ai {
+  background: #a67c52;
+  padding: 12px 16px 24px 16px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.add-comment-btn {
+  position: absolute;
+  right: 24px;
+  bottom: 80px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #f5e6d6;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9800;
+  font-size: 2rem;
+  border: none;
+  z-index: 101;
+}
+.favorite-btn {
+  background: none;
+  border: none;
+  color: #ff9800;
+  font-size: 1.2rem;
+  padding: 0;
+  margin-left: 8px;
+}
+.emoji-count {
+  font-size: 1.1rem;
+  color: #333;
+  margin-right: 8px;
+}
+.d-flex.align-items-center > span {
+  font-size: 1.1rem;
+}
+.d-flex.align-items-center a {
+  font-size: 1rem;
+  color: #ff9800;
+  background: #fff7ec;
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+.btn-outline-secondary {
+  border-radius: 20px;
+  border: 1px solid #ff9800 !important;
+  color: #ff9800 !important;
+  background: #fff7ec !important;
+  font-size: 0.95rem;
+  padding: 2px 14px;
+}
+.btn-outline-secondary.active,
+.btn-outline-secondary:active {
+  background: #ff9800 !important;
+  color: #fff !important;
+}
+.rounded-circle {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
