@@ -9,8 +9,10 @@
       rel="stylesheet"
     />
     <title>聚會活動詳細頁-報名</title>
-    <script type="module" crossorigin src="/eaterhood-teams/assets/main-ByE-TZ3W.js"></script>
-    <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-Bnw1yokH.css">
+    <!-- 在 head 區塊引入 SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" crossorigin src="/eaterhood-teams/assets/main-BbUT8v3u.js"></script>
+    <link rel="stylesheet" crossorigin href="/eaterhood-teams/assets/main-Djjm6anG.css">
   </head>
   <body class="text-n500 t1">
     <div class="phone">
@@ -146,12 +148,30 @@
                 <span class="t3 ms-2">+8 人</span>
               </div>
             </section>
-            <!-- 底部固定 CTA -->
-            <button class="btn btn-primary w-100 rounded-pill">我要報名</button>
+            <!-- 報名按鈕加上 id 方便選取 -->
+            <div class="footer-btn">
+              <button id="signupBtn" class="btn btn-primary w-100 rounded-pill">
+                我要報名
+              </button>
+            </div>
           </div>
         </main>
       </div>
     </div>
 
+    <script>
+      document
+        .getElementById("signupBtn")
+        .addEventListener("click", function () {
+          this.disabled = true;
+          this.textContent = "審核中";
+          Swal.fire({
+            icon: "success",
+            title: "已成功報名活動，等待審核",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+        });
+    </script>
   </body>
 </html>
