@@ -1,27 +1,25 @@
 .comment-tab-btn {
-  border: 2px solid #ffd796;
-  background: #fff;
+  border: 1px solid #e8e7e5;
+
   color: #6d4c23;
   border-radius: 20px;
   padding: 4px 22px;
   font-size: 1.08rem;
   font-weight: 500;
   transition: all 0.2s;
-  box-shadow: none;
-  outline: none;
+  background-color: #fff;
 }
 .comment-tab-btn.active {
-  background: #fff;
   color: #6d4c23;
   border: 2px solid #ffb84d;
-  box-shadow: 0 0 0 2px #fff7ec;
-}
-.comment-tab-btn:not(.active) {
-  background: #f7f7f7;
-  color: #6d4c23;
-  border: none;
+  background-color: #fef5e2;
 }
 
+.yellow_line {
+  border: none; /* 先移除預設 border */
+  height: 1px; /* 設定高度 */
+  background: #fcdeac; /* 背景顏色 */
+}
 /* 新增按鈕 */
 .fixed-rightdown {
   position: absolute;
@@ -51,4 +49,15 @@
       height: 24px;
     }
   }
+}
+
+#aiInput {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+#aiInput:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
