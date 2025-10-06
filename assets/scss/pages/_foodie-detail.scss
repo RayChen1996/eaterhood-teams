@@ -21,3 +21,34 @@
   color: #6d4c23;
   border: none;
 }
+
+/* 新增按鈕 */
+.fixed-rightdown {
+  position: absolute;
+  bottom: 109px;
+  right: 16px;
+  z-index: 2;
+
+  a.add {
+    font-size: 18px;
+    background: white;
+    gap: 10px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #e8e7e5;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px 0px rgba(244, 144, 43, 0.4);
+    text-decoration: none;
+    &:hover {
+      border: 2px solid #fac677;
+      background: #fef5e2;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
