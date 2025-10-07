@@ -86,6 +86,38 @@
               <div class="d-flex align-items-center">
                 <span class="me-2 text-n300">推薦指數</span>
                 <!-- 星星評分 -->
+                <div class="d-flex align-items-center gap-1 star-rating">
+                  <img
+                    src="../assets/images/icon/mingcute_star-fill.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                  <img
+                    src="../assets/images/icon/mingcute_star-line.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                  <img
+                    src="../assets/images/icon/mingcute_star-line.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                  <img
+                    src="../assets/images/icon/mingcute_star-line.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                  <img
+                    src="../assets/images/icon/mingcute_star-line.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
               </div>
             </div>
 
@@ -265,6 +297,23 @@
         $(".feedback-group").on("click", function () {
           $(this).find(".feedback-active").toggle();
           $(this).find(".feedback-default").toggle();
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const starImgs = document.querySelectorAll(
+          ".d-flex.align-items-center .star-rating img"
+        );
+        starImgs.forEach((star, idx) => {
+          star.addEventListener("click", function () {
+            starImgs.forEach((s, i) => {
+              if (i <= idx) {
+                s.src = "../assets/images/icon/mingcute_star-fill.svg"; // 滿星
+              } else {
+                s.src = "../assets/images/icon/mingcute_star-line.svg"; // 空星
+              }
+            });
+          });
         });
       });
     </script>
