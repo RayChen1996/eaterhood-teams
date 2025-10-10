@@ -3,15 +3,14 @@
 
   color: #6d4c23;
   border-radius: 20px;
-  padding: 4px 22px;
-  font-size: 1.08rem;
-  font-weight: 500;
+  padding: 0px 16px 0 16px;
+
   transition: all 0.2s;
   background-color: #fff;
 }
 .comment-tab-btn.active {
   color: #6d4c23;
-  border: 2px solid #ffb84d;
+  border: 1px solid #ffb84d;
   background-color: #fef5e2;
 }
 
@@ -60,4 +59,15 @@
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+}
+
+.location_icon {
+  width: 16px;
+  height: 16px;
+}
+
+.favrite {
+  width: 36px;
+  height: 36px;
+  color: #fff;
 }
