@@ -61,6 +61,44 @@
   box-shadow: none !important;
 }
 
+/* 讓 placeholder 字體 17px，顏色 #fff（並確保 opacity=1）*/
+#aiInput,
+#aiInput::-webkit-input-placeholder,
+#aiInput::-moz-placeholder,
+#aiInput:-ms-input-placeholder,
+#aiInput::-ms-input-placeholder {
+  font-size: 17px;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* 各瀏覽器專用偽元素 */
+#aiInput::placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 1;
+}
+#aiInput::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 1;
+}
+#aiInput::-moz-placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 1;
+}
+#aiInput:-ms-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 1;
+}
+#aiInput::-ms-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+  opacity: 1;
+}
+
 .location_icon {
   width: 16px;
   height: 16px;
