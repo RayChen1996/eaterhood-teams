@@ -281,10 +281,23 @@
                   placeholder="留言....."
                 />
                 <img
-                  id="submitBtn"
+                  id="default_statusBtn"
                   class="favrite"
-                  src="../assets/images/icon/feedback_white.svg"
-                  alt="favite.svg"
+                  src="../assets/images/icon/status=white.svg"
+                  alt="favrite"
+                />
+                <img
+                  id="active_statusBtn"
+                  class="favrite"
+                  src="../assets/images/icon/feedback_active.svg"
+                  alt="feedback_active"
+                />
+                <img
+                  id="sendBtn"
+                  class="favrite"
+                  src="../assets/images/icon/send.svg"
+                  alt="send.svg"
+                  style="display: none"
                 />
               </div>
             </div>
@@ -299,26 +312,89 @@
     <script type="module" src="../main.js"></script>
     <script>
       $(function () {
+        // feedback-group 單一 click 用 toggle 切換兩張圖
         $(".feedback-group").on("click", function () {
-          $(this).find(".feedback-active").toggle();
-          $(this).find(".feedback-default").toggle();
+          $(this).find(".feedback-active, .feedback-default").toggle();
         });
-      });
 
-      document.addEventListener("DOMContentLoaded", function () {
+        // 星星評分
         const starImgs = document.querySelectorAll(
           ".d-flex.align-items-center .star-rating img"
         );
         starImgs.forEach((star, idx) => {
           star.addEventListener("click", function () {
             starImgs.forEach((s, i) => {
-              if (i <= idx) {
-                s.src = "../assets/images/icon/mingcute_star-fill.svg"; // 滿星
-              } else {
-                s.src = "../assets/images/icon/mingcute_star-line.svg"; // 空星
-              }
+              s.src =
+                i <= idx
+                  ? "../assets/images/icon/mingcute_star-fill.svg"
+                  : "../assets/images/icon/mingcute_star-line.svg";
             });
           });
+        });
+
+        // footer 輸入欄位與按鈕切換（互斥處理）
+        const $input = $("#aiInput");
+        const $defaultStatus = $("#default_statusBtn");
+        const $activeStatus = $("#active_statusBtn");
+        const $send = $("#sendBtn");
+
+        // 狀態變數：是否已按愛心（收藏/按讚）
+        let isFavorited = false;
+
+        function renderFooterIcons() {
+          const hasText = $.trim($input.val()).length > 0;
+
+          // 有文字時只顯示 send（其他狀態隱藏）
+          if (hasText) {
+            $send.show();
+            $defaultStatus.hide();
+            $activeStatus.hide();
+            return;
+          }
+
+          // 無文字時，依 isFavorited 顯示其中一個 icon（確保不會同時顯示）
+          $send.hide();
+          if (isFavorited) {
+            $activeStatus.show();
+            $defaultStatus.hide();
+          } else {
+            $defaultStatus.show();
+            $activeStatus.hide();
+          }
+        }
+
+        // 初始顯示設定（確保兩個愛心不會同時顯示）
+        isFavorited = false; // 預設未按愛心
+        renderFooterIcons();
+
+        // 輸入監聽：動態顯示 send 或狀態圖示
+        $input.on("input", function () {
+          renderFooterIcons();
+        });
+
+        // 點擊 status 圖示互相切換（改變狀態變數並重新 render）
+        $defaultStatus.on("click", function () {
+          // 只有在沒有輸入文字時才處理
+          if ($.trim($input.val()).length === 0) {
+            isFavorited = true;
+            renderFooterIcons();
+          }
+        });
+        $activeStatus.on("click", function () {
+          if ($.trim($input.val()).length === 0) {
+            isFavorited = false;
+            renderFooterIcons();
+          }
+        });
+
+        // send 按鈕行為：送出、清空並還原
+        $send.on("click", function () {
+          const val = $.trim($input.val());
+          if (!val) return;
+          // 範例：用 alert 或 toast 顯示成功
+          alert("已送出留言：" + val);
+          $input.val("");
+          renderFooterIcons();
         });
       });
     </script>
