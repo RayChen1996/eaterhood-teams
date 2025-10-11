@@ -33,4 +33,14 @@
 - [zuien-kk](https://github.com/zuien-kk)
 - [RayChen1996](https://github.com/RayChen1996)
 
+![alt text](image.png)
+
 ## 🚀 畫面介紹
+
+### 首頁
+
+![alt text](image-1.png)
+
+### 吃貨專區
+
+![alt text](image-2.png)
